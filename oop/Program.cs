@@ -26,7 +26,7 @@ namespace oop
             Student stu = new Student();
             Console.WriteLine(" 类中的字段name不是public权限，所以会取不到");
             stu.age = 10;
-            Console.WriteLine("通过类的Introduce方法接口取到了隐藏的name字段\n"); 
+            Console.WriteLine("通过类的Introduce方法接口取到了隐藏的name字段\n");
             stu.Introduce();
 
             Person2 p3 = new Person2();
@@ -36,11 +36,15 @@ namespace oop
             p3.Age = -50;
             p3.Speak();
 
+            p3.Name = "张三";
             p3.Sex = 'a';
             p3.Sex = '男';
-            p3.Speak();
+
+            p3.ID = 521;
 
             p3.Phone = 123456;
+
+            p3.ContactSomeOne();
 
 
 

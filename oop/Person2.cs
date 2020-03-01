@@ -11,28 +11,23 @@ namespace oop
 {
     class Person2
     {
-        private string name;
         private int id;
         private int phone;
         private int age=30; // 受保护的私有字段
         private char sex;
-        
+        private string name;
         public string Name
         {
-            get;
-            set;
+            get
+            { return name; }
+            set
+            { name = value; }
         }
 
-        public int ID
-        {
-            get
-            { return id; }
-            set
-            { id = value; }
-        }
+        public int ID { get => id; set => id = value;}
        
         // lambda表达式来把字段自动封装成属性 
-        public int Phone { get => phone; set => value; }
+        public int Phone { get => phone; set => phone=value; }
         public int Age  // 公有属性来控制私有字段的合法访问
         {
             get
@@ -62,6 +57,7 @@ namespace oop
             }
             set
             {
+                Console.WriteLine("通过设置公有属性值的逻辑条件来判断私有字段的合法访问");
                 if(value == '男' | value=='女')
                 {
                     sex = value;
@@ -79,8 +75,11 @@ namespace oop
             Console.WriteLine("但可以通过实例化类来访问类");
             Student stu = new Student();
             stu.Introduce();
-            Console.WriteLine("大家好，我今年{0}岁\n", Age);
-            Console.WriteLine("大家好，本人性别是{0}\n", sex);
+        }
+
+        public void ContactSomeOne()
+        {
+            Console.WriteLine(" 姓名：{0}\n 性别：{1}\n 年龄：{2}\n 身份证ID号:{3}\n 联系电话:{4}\n ", name, sex, age, id, phone);
         }
     }
 }
