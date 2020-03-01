@@ -46,6 +46,12 @@ namespace oop
 
             p3.ContactSomeOne();
 
+            Person2 p4 = new Person2("李四", 80);
+            p4.ContactSomeOne();
+
+
+
+
 
 
 

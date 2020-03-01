@@ -6,11 +6,23 @@ using System.Threading.Tasks;
 /// <summary>
 /// 类属性的访问控制
 /// 通过公有属性保护私有字段的合法访问
+/// 构造方法：1.方法与类同名 2.方法名前无返回值类型声明 3.无return返回值
 /// </summary>
 namespace oop
 {
     class Person2
     {
+        public Person2()
+        {
+            Console.WriteLine("无参的构造方法\n");
+        }
+
+        public Person2(string Myname, int Myage)
+        {
+            Console.WriteLine("有参的构造方法");
+            Name = Myname;
+            Age = Myage;
+        }
         private int id;
         private int phone;
         private int age=30; // 受保护的私有字段
@@ -26,7 +38,7 @@ namespace oop
 
         public int ID { get => id; set => id = value;}
        
-        // lambda表达式来把字段自动封装成属性 
+        // lambda匿名函数表达式来把字段自动封装成属性 
         public int Phone { get => phone; set => phone=value; }
         public int Age  // 公有属性来控制私有字段的合法访问
         {
