@@ -26,9 +26,9 @@ namespace oop
             // 非静态类须实例化后调用
             Person p = new Person();
             p.age = 20;
-            Console.WriteLine(" 就近原则，这里的age赋值为基类中的60，不会取这里的20");
             Console.WriteLine("调用基类的方法");
             p.Speak();
+            Console.WriteLine(" 就近原则，这里的age赋值为基类中的60，不会取这里的20\n");
 
             // 静态字段可直接访问： 类名.字段 ,无须创建类实例化对象
             // 静态方法只能访问静态成员，不能访问非静态成员
