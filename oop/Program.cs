@@ -10,6 +10,8 @@ namespace oop
 {
     class Program
     {
+        private static string School;
+
         static void Main(string[] args)
         {
             // 非静态类须实例化后调用
@@ -18,6 +20,17 @@ namespace oop
             Console.WriteLine(" 就近原则，这里的age赋值为基类中的60，不会取这里的20");
             Console.WriteLine("调用基类的方法");
             p.Speak();
+
+            // 静态字段可直接访问： 类名.字段 ,无须创建类实例化对象
+            // 静态方法只能访问静态成员，不能访问非静态成员
+            // 静态类所有成员都必须是静态的，不能声明非静态成员。
+            // 静态类不能实例化，可直接调用类的所有成员
+            School = Student.schoolName;
+            Console.WriteLine("学校名：{0}\n", School);
+
+            // 静态构造方法只会执行一次
+            Student std = new Student();
+            Student std2 = new Student(); // 不会执行
 
             Console.WriteLine("实例化对象时会为类的字段int型自动赋默认值0");
             Person2 p2 = new Person2();
@@ -46,13 +59,15 @@ namespace oop
 
             p3.ContactSomeOne();
 
-            Person2 p4 = new Person2("李四", 80);
+            Person2 p4 = new Person2();
             p4.ContactSomeOne();
 
-
-
-
-
+            //索引器
+            Person3 s = new Person3();
+            s[1] = "王二";
+            s[2] = "男";
+            s[3] = "5521221";
+            s.Say();
 
 
 

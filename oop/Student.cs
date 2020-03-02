@@ -12,7 +12,16 @@ namespace oop
     class Student  // 默认internal族类（项目内）, 改为public后其它命名空间可引用并使用其方法
     {
         string name = "Kirk"; // 默认是private私有类访问修饰符
+        public static string staticName;
         public int age;
+        public static string schoolName = "山东大学"; // 定义静态字段
+
+        static Student()
+        {
+            staticName = "船长";
+            Console.WriteLine("静态构造方法");
+        }
+
         public void Introduce()
         {
             Console.WriteLine("My name is {0}, and {1} years old.", name, age);

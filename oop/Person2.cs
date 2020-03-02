@@ -17,11 +17,13 @@ namespace oop
             Console.WriteLine("无参的构造方法\n");
         }
 
+        // 多个构造方法叫做构造方法重载，一旦定义了有参，默认无参方法失效
         public Person2(string Myname, int Myage)
         {
             Console.WriteLine("有参的构造方法");
             Name = Myname;
-            Age = Myage;
+            this.Age = Myage; 
+            // 关键词this访问类内部成员属性");
         }
         private int id;
         private int phone;
@@ -87,6 +89,9 @@ namespace oop
             Console.WriteLine("但可以通过实例化类来访问类");
             Student stu = new Student();
             stu.Introduce();
+
+            Console.WriteLine("关键词this访问类内部成员方法");
+            this.ContactSomeOne();
         }
 
         public void ContactSomeOne()
