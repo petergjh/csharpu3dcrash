@@ -4,7 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 /// <summary>
-/// 访问修饰符与非静态类的实例化调用
+/// 1. 访问修饰符
+/// 2. 非静态类的实例化调用
+/// 3. 静态类的直接调用
+/// 4. 调用继承类中的protected方法
+/// 5. 通过公共属性的逻辑判断来合法访问私有字段
+/// 6. 构造方法
+/// 7. 静态方法
+/// 8. 单例模式
+/// 
+/// 
 /// </summary>
 namespace oop
 {
