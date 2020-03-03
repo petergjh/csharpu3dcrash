@@ -79,6 +79,9 @@ namespace oop
             s.Say();
 
 
+            // Animal animal = new Animal();单例模式无法格外生成实例
+            Animal animal = Animal.Create();
+            Console.WriteLine("单例模式 {0}", animal);
 
 
             Console.ReadKey();  // 暂停输出界面，防闪退
