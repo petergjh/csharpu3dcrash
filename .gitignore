@@ -1,10 +1,258 @@
+# Visual Studio 
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+[Xx]64/
+[Xx]86/
+[Bb]uild/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio 2015 cache/options directory
+.vs/
+# Uncomment if you have tasks that create the project's static files in wwwroot
+#wwwroot/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NUNIT
+*.VisualState.xml
+TestResult.xml
+
+# Build Results of an ATL Project
+[Dd]ebugPS/
+[Rr]eleasePS/
+dlldata.c
+
+# DNX
+project.lock.json
+artifacts/
+
+*_i.c
+*_p.c
+*_i.h
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# Chutzpah Test files
+_Chutzpah*
+
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# TFS 2012 Local Workspace
+$tf/
+
+# Guidance Automation Toolkit
+*.gpState
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# JustCode is a .NET coding add-in
+.JustCode
+
+# TeamCity is a build add-in
+_TeamCity*
+
+# DotCover is a Code Coverage Tool
+*.dotCover
+
+# NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_*
+
+# MightyMoose
+*.mm.*
+AutoTest.Net/
+
+# Web workbench (sass)
+.sass-cache/
+
+# Installshield output folder
+[Ee]xpress/
+
+# DocProject is a documentation generator add-in
+DocProject/buildhelp/
+DocProject/Help/*.HxT
+DocProject/Help/*.HxC
+DocProject/Help/*.hhc
+DocProject/Help/*.hhk
+DocProject/Help/*.hhp
+DocProject/Help/Html2
+DocProject/Help/html
+
+# Click-Once directory
+publish/
+
+# Publish Web Output
+*.[Pp]ublish.xml
+*.azurePubxml
+*.publishproj
+*.pubxml
+PublishProfiles/
+PublishScripts/
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/packages/repositories.config
+# NuGet v3's project.json files produces more ignoreable files
+*.nuget.props
+*.nuget.targets
+
+# Microsoft Azure Build Output
+csx/
+*.build.csdef
+
+# Microsoft Azure Emulator
+ecf/
+rcf/
+
+# Windows Store app package directory
+AppPackages/
+BundleArtifacts/
+Package.StoreAssociation.xml
+_pkginfo.txt
+
+# Visual Studio cache files
+# files ending in .cache can be ignored
+*.[Cc]ache
+# but keep track of directories ending in .cache
+!*.[Cc]ache/
+
+# Others
+ClientBin/
+[Ss]tyle[Cc]op.*
+~$*
+*~
+*.dbmdl
+*.dbproj.schemaview
+*.pfx
+*.publishsettings
+orleans.codegen.cs
+
+# RIA/Silverlight projects
+Generated_Code/
+
+# Backup & report files from converting an old project file
+# to a newer Visual Studio version. Backup files are not needed,
+# because we have git ;-)
+_UpgradeReport_Files/
+Backup*/
+UpgradeLog*.XML
+UpgradeLog*.htm
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# Business Intelligence projects
+*.rdl.data
+*.bim.layout
+*.bim_*.settings
+
+# Microsoft Fakes
+FakesAssemblies/
+
+# GhostDoc plugin setting file
+*.GhostDoc.xml
+
+# Node.js Tools for Visual Studio
+.ntvs_analysis.dat
+
+# Visual Studio 6 build log
+*.plg
+
+# Visual Studio 6 workspace options file
+*.opt
+
+# Visual Studio LightSwitch build output
+**/*.HTMLClient/GeneratedArtifacts
+**/*.DesktopClient/GeneratedArtifacts
+**/*.DesktopClient/ModelManifest.xml
+**/*.Server/GeneratedArtifacts
+**/*.Server/ModelManifest.xml
+_Pvt_Extensions
+
+# LightSwitch generated files
+GeneratedArtifacts/
+ModelManifest.xml
+
+# Paket dependency manager
+.paket/paket.exe
+paket-files/
+
+# FAKE - F# Make
+.fake/
+
+.DS_Store
+
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
 DyncDll/bin/
+outPath/
 Assets/AssetStoreTools*
+Assets/StreamingAssets/[Mm]ac/*
+Assets/StreamingAssets/[Ww]indows/*
 
 # Visual Studio cache directory
 .vs/
@@ -47,604 +295,4 @@ keepTemporaries= true
 keepBackup= false
 [merge]
 tool= unity_yamltool= unity_yaml
-Assets/Spine Examples/Getting Started.meta
-Assets/Spine Examples/Other Examples.meta
-Assets/Spine Examples/Scripts.meta
-Assets/Spine Examples/Sound.meta
-Assets/Spine Examples/Spine.meta
-Assets/Spine Examples/Getting Started/1 The Spine GameObject.unity
-Assets/Spine Examples/Getting Started/1 The Spine GameObject.unity.meta
-Assets/Spine Examples/Getting Started/2 Controlling Animation.unity
-Assets/Spine Examples/Getting Started/2 Controlling Animation.unity.meta
-Assets/Spine Examples/Getting Started/3 Controlling Animation Continued.unity
-Assets/Spine Examples/Getting Started/3 Controlling Animation Continued.unity.meta
-Assets/Spine Examples/Getting Started/4 Object Oriented Sample.unity
-Assets/Spine Examples/Getting Started/4 Object Oriented Sample.unity.meta
-Assets/Spine Examples/Getting Started/5 Basic Platformer.unity
-Assets/Spine Examples/Getting Started/5 Basic Platformer.unity.meta
-Assets/Spine Examples/Getting Started/6 SkeletonGraphic.unity
-Assets/Spine Examples/Getting Started/6 SkeletonGraphic.unity.meta
-Assets/Spine Examples/Other Examples/AtlasRegionAttacher.unity
-Assets/Spine Examples/Other Examples/AtlasRegionAttacher.unity.meta
-Assets/Spine Examples/Other Examples/Dragon.unity
-Assets/Spine Examples/Other Examples/Dragon.unity.meta
-Assets/Spine Examples/Other Examples/Drunkboy.unity
-Assets/Spine Examples/Other Examples/Drunkboy.unity.meta
-Assets/Spine Examples/Other Examples/Freezeboy.unity
-Assets/Spine Examples/Other Examples/Freezeboy.unity.meta
-Assets/Spine Examples/Other Examples/Goblins.unity
-Assets/Spine Examples/Other Examples/Goblins.unity.meta
-Assets/Spine Examples/Other Examples/Instantiate from Script.unity
-Assets/Spine Examples/Other Examples/Instantiate from Script.unity.meta
-Assets/Spine Examples/Other Examples/Mix and Match Equip Assets.meta
-Assets/Spine Examples/Other Examples/Mix and Match Equip.unity
-Assets/Spine Examples/Other Examples/Mix and Match Equip.unity.meta
-Assets/Spine Examples/Other Examples/Mix and Match.unity
-Assets/Spine Examples/Other Examples/Mix and Match.unity.meta
-Assets/Spine Examples/Other Examples/Per Instance Material Properties.unity
-Assets/Spine Examples/Other Examples/Per Instance Material Properties.unity.meta
-Assets/Spine Examples/Other Examples/SkeletonAnimationMulti.unity
-Assets/Spine Examples/Other Examples/SkeletonAnimationMulti.unity.meta
-Assets/Spine Examples/Other Examples/SkeletonRenderSeparator.unity
-Assets/Spine Examples/Other Examples/SkeletonRenderSeparator.unity.meta
-Assets/Spine Examples/Other Examples/SkeletonUtility Animated Physics.unity
-Assets/Spine Examples/Other Examples/SkeletonUtility Animated Physics.unity.meta
-Assets/Spine Examples/Other Examples/SkeletonUtility Eyes.unity
-Assets/Spine Examples/Other Examples/SkeletonUtility Eyes.unity.meta
-Assets/Spine Examples/Other Examples/SkeletonUtility GroundConstraint.unity
-Assets/Spine Examples/Other Examples/SkeletonUtility GroundConstraint.unity.meta
-Assets/Spine Examples/Other Examples/SkeletonUtility Ragdoll.unity
-Assets/Spine Examples/Other Examples/SkeletonUtility Ragdoll.unity.meta
-Assets/Spine Examples/Other Examples/SpineGauge.unity
-Assets/Spine Examples/Other Examples/SpineGauge.unity.meta
-Assets/Spine Examples/Other Examples/Sprite Shaders.unity
-Assets/Spine Examples/Other Examples/Sprite Shaders.unity.meta
-Assets/Spine Examples/Other Examples/VertexEffect.unity
-Assets/Spine Examples/Other Examples/VertexEffect.unity.meta
-Assets/Spine Examples/Other Examples/Mix and Match Equip Assets/Goggles Normal.asset
-Assets/Spine Examples/Other Examples/Mix and Match Equip Assets/Goggles Normal.asset.meta
-Assets/Spine Examples/Other Examples/Mix and Match Equip Assets/Goggles Tactical.asset
-Assets/Spine Examples/Other Examples/Mix and Match Equip Assets/Goggles Tactical.asset.meta
-Assets/Spine Examples/Other Examples/Mix and Match Equip Assets/Gun Freeze.asset
-Assets/Spine Examples/Other Examples/Mix and Match Equip Assets/Gun Freeze.asset.meta
-Assets/Spine Examples/Other Examples/Mix and Match Equip Assets/Gun Normal.asset
-Assets/Spine Examples/Other Examples/Mix and Match Equip Assets/Gun Normal.asset.meta
-Assets/Spine Examples/Scripts/AttackSpineboy.cs
-Assets/Spine Examples/Scripts/AttackSpineboy.cs.meta
-Assets/Spine Examples/Scripts/DataAssetsFromExportsExample.cs
-Assets/Spine Examples/Scripts/DataAssetsFromExportsExample.cs.meta
-Assets/Spine Examples/Scripts/DraggableTransform.cs
-Assets/Spine Examples/Scripts/DraggableTransform.cs.meta
-Assets/Spine Examples/Scripts/FootSoldierExample.cs
-Assets/Spine Examples/Scripts/FootSoldierExample.cs.meta
-Assets/Spine Examples/Scripts/Getting Started Scripts.meta
-Assets/Spine Examples/Scripts/Goblins.cs
-Assets/Spine Examples/Scripts/Goblins.cs.meta
-Assets/Spine Examples/Scripts/HandleEventWithAudioExample.cs
-Assets/Spine Examples/Scripts/HandleEventWithAudioExample.cs.meta
-Assets/Spine Examples/Scripts/HurtFlashEffect.cs
-Assets/Spine Examples/Scripts/HurtFlashEffect.cs.meta
-Assets/Spine Examples/Scripts/MaterialPropertyBlockExample.cs
-Assets/Spine Examples/Scripts/MaterialPropertyBlockExample.cs.meta
-Assets/Spine Examples/Scripts/Mix and Match Character Customize.meta
-Assets/Spine Examples/Scripts/MixAndMatch.cs
-Assets/Spine Examples/Scripts/MixAndMatch.cs.meta
-Assets/Spine Examples/Scripts/MixAndMatchGraphic.cs
-Assets/Spine Examples/Scripts/MixAndMatchGraphic.cs.meta
-Assets/Spine Examples/Scripts/RaggedySpineboy.cs
-Assets/Spine Examples/Scripts/RaggedySpineboy.cs.meta
-Assets/Spine Examples/Scripts/ReloadSceneOnKeyDown.cs
-Assets/Spine Examples/Scripts/ReloadSceneOnKeyDown.cs.meta
-Assets/Spine Examples/Scripts/Rotator.cs
-Assets/Spine Examples/Scripts/Rotator.cs.meta
-Assets/Spine Examples/Scripts/Sample Components.meta
-Assets/Spine Examples/Scripts/SpawnFromSkeletonDataExample.cs
-Assets/Spine Examples/Scripts/SpawnFromSkeletonDataExample.cs.meta
-Assets/Spine Examples/Scripts/Spineboy.cs
-Assets/Spine Examples/Scripts/Spineboy.cs.meta
-Assets/Spine Examples/Scripts/SpineboyBodyTilt.cs
-Assets/Spine Examples/Scripts/SpineboyBodyTilt.cs.meta
-Assets/Spine Examples/Scripts/SpineboyFacialExpression.cs
-Assets/Spine Examples/Scripts/SpineboyFacialExpression.cs.meta
-Assets/Spine Examples/Scripts/SpineboyFootplanter.cs
-Assets/Spine Examples/Scripts/SpineboyFootplanter.cs.meta
-Assets/Spine Examples/Scripts/SpineboyFreeze.cs
-Assets/Spine Examples/Scripts/SpineboyFreeze.cs.meta
-Assets/Spine Examples/Scripts/SpineboyPole.cs
-Assets/Spine Examples/Scripts/SpineboyPole.cs.meta
-Assets/Spine Examples/Scripts/SpineGauge.cs
-Assets/Spine Examples/Scripts/SpineGauge.cs.meta
-Assets/Spine Examples/Scripts/Getting Started Scripts/BasicPlatformerController.cs
-Assets/Spine Examples/Scripts/Getting Started Scripts/BasicPlatformerController.cs.meta
-Assets/Spine Examples/Scripts/Getting Started Scripts/ConstrainedCamera.cs
-Assets/Spine Examples/Scripts/Getting Started Scripts/ConstrainedCamera.cs.meta
-Assets/Spine Examples/Scripts/Getting Started Scripts/Raptor.cs
-Assets/Spine Examples/Scripts/Getting Started Scripts/Raptor.cs.meta
-Assets/Spine Examples/Scripts/Getting Started Scripts/SpineBeginnerTwo.cs
-Assets/Spine Examples/Scripts/Getting Started Scripts/SpineBeginnerTwo.cs.meta
-Assets/Spine Examples/Scripts/Getting Started Scripts/SpineBlinkPlayer.cs
-Assets/Spine Examples/Scripts/Getting Started Scripts/SpineBlinkPlayer.cs.meta
-Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyBeginnerInput.cs
-Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyBeginnerInput.cs.meta
-Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyBeginnerModel.cs
-Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyBeginnerModel.cs.meta
-Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyBeginnerView.cs
-Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyBeginnerView.cs.meta
-Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyTargetController.cs
-Assets/Spine Examples/Scripts/Getting Started Scripts/SpineboyTargetController.cs.meta
-Assets/Spine Examples/Scripts/Getting Started Scripts/TransitionDictionaryExample.cs
-Assets/Spine Examples/Scripts/Getting Started Scripts/TransitionDictionaryExample.cs.meta
-Assets/Spine Examples/Scripts/Mix and Match Character Customize/EquipAssetExample.cs
-Assets/Spine Examples/Scripts/Mix and Match Character Customize/EquipAssetExample.cs.meta
-Assets/Spine Examples/Scripts/Mix and Match Character Customize/EquipButtonExample.cs
-Assets/Spine Examples/Scripts/Mix and Match Character Customize/EquipButtonExample.cs.meta
-Assets/Spine Examples/Scripts/Mix and Match Character Customize/EquipsVisualsComponentExample.cs
-Assets/Spine Examples/Scripts/Mix and Match Character Customize/EquipsVisualsComponentExample.cs.meta
-Assets/Spine Examples/Scripts/Mix and Match Character Customize/EquipSystemExample.cs
-Assets/Spine Examples/Scripts/Mix and Match Character Customize/EquipSystemExample.cs.meta
-Assets/Spine Examples/Scripts/Sample Components/BoneLocalOverride.cs
-Assets/Spine Examples/Scripts/Sample Components/BoneLocalOverride.cs.meta
-Assets/Spine Examples/Scripts/Sample Components/CombinedSkin.cs
-Assets/Spine Examples/Scripts/Sample Components/CombinedSkin.cs.meta
-Assets/Spine Examples/Scripts/Sample Components/Legacy.meta
-Assets/Spine Examples/Scripts/Sample Components/Sample VertexEffects.meta
-Assets/Spine Examples/Scripts/Sample Components/SkeletonAnimationMulti.meta
-Assets/Spine Examples/Scripts/Sample Components/SkeletonColorInitialize.cs
-Assets/Spine Examples/Scripts/Sample Components/SkeletonColorInitialize.cs.meta
-Assets/Spine Examples/Scripts/Sample Components/SlotTintBlackFollower.cs
-Assets/Spine Examples/Scripts/Sample Components/SlotTintBlackFollower.cs.meta
-Assets/Spine Examples/Scripts/Sample Components/SpineEventUnityHandler.cs
-Assets/Spine Examples/Scripts/Sample Components/SpineEventUnityHandler.cs.meta
-Assets/Spine Examples/Scripts/Sample Components/Legacy/AtlasRegionAttacher.cs
-Assets/Spine Examples/Scripts/Sample Components/Legacy/AtlasRegionAttacher.cs.meta
-Assets/Spine Examples/Scripts/Sample Components/Legacy/CustomSkin.cs
-Assets/Spine Examples/Scripts/Sample Components/Legacy/CustomSkin.cs.meta
-Assets/Spine Examples/Scripts/Sample Components/Legacy/SpriteAttacher.cs
-Assets/Spine Examples/Scripts/Sample Components/Legacy/SpriteAttacher.cs.meta
-Assets/Spine Examples/Scripts/Sample Components/Sample VertexEffects/JitterEffectExample.cs
-Assets/Spine Examples/Scripts/Sample Components/Sample VertexEffects/JitterEffectExample.cs.meta
-Assets/Spine Examples/Scripts/Sample Components/Sample VertexEffects/TwoByTwoTransformEffectExample.cs
-Assets/Spine Examples/Scripts/Sample Components/Sample VertexEffects/TwoByTwoTransformEffectExample.cs.meta
-Assets/Spine Examples/Scripts/Sample Components/SkeletonAnimationMulti/SkeletonAnimationMulti.cs
-Assets/Spine Examples/Scripts/Sample Components/SkeletonAnimationMulti/SkeletonAnimationMulti.cs.meta
-Assets/Spine Examples/Sound/Footstep.ogg
-Assets/Spine Examples/Sound/Footstep.ogg.meta
-Assets/Spine Examples/Sound/Hardfall.ogg
-Assets/Spine Examples/Sound/Hardfall.ogg.meta
-Assets/Spine Examples/Sound/Jump.ogg
-Assets/Spine Examples/Sound/Jump.ogg.meta
-Assets/Spine Examples/Sound/Spineboygun.ogg
-Assets/Spine Examples/Sound/Spineboygun.ogg.meta
-Assets/Spine Examples/Spine/Dragon.meta
-Assets/Spine Examples/Spine/Eyes.meta
-Assets/Spine Examples/Spine/FootSoldier.meta
-Assets/Spine Examples/Spine/Gauge.meta
-Assets/Spine Examples/Spine/Goblins.meta
-Assets/Spine Examples/Spine/Hero.meta
-Assets/Spine Examples/Spine/Raggedy Spineboy.meta
-Assets/Spine Examples/Spine/Raptor.meta
-Assets/Spine Examples/Spine/Runtime Template Material.mat
-Assets/Spine Examples/Spine/Runtime Template Material.mat.meta
-Assets/Spine Examples/Spine/spineboy-pro.meta
-Assets/Spine Examples/Spine/spineboy-unity.meta
-Assets/Spine Examples/Spine/Spineunitygirl.meta
-Assets/Spine Examples/Spine/square32.png
-Assets/Spine Examples/Spine/square32.png.meta
-Assets/Spine Examples/Spine/Strechyman.meta
-Assets/Spine Examples/Spine/Dragon/dragon.atlas.txt
-Assets/Spine Examples/Spine/Dragon/dragon.atlas.txt.meta
-Assets/Spine Examples/Spine/Dragon/dragon.json
-Assets/Spine Examples/Spine/Dragon/dragon.json.meta
-Assets/Spine Examples/Spine/Dragon/dragon.png
-Assets/Spine Examples/Spine/Dragon/dragon.png.meta
-Assets/Spine Examples/Spine/Dragon/dragon2.png
-Assets/Spine Examples/Spine/Dragon/dragon2.png.meta
-Assets/Spine Examples/Spine/Dragon/dragon_Atlas.asset
-Assets/Spine Examples/Spine/Dragon/dragon_Atlas.asset.meta
-Assets/Spine Examples/Spine/Dragon/dragon_dragon.mat
-Assets/Spine Examples/Spine/Dragon/dragon_dragon.mat.meta
-Assets/Spine Examples/Spine/Dragon/dragon_dragon2.mat
-Assets/Spine Examples/Spine/Dragon/dragon_dragon2.mat.meta
-Assets/Spine Examples/Spine/Dragon/dragon_SkeletonData.asset
-Assets/Spine Examples/Spine/Dragon/dragon_SkeletonData.asset.meta
-Assets/Spine Examples/Spine/Dragon/license.txt
-Assets/Spine Examples/Spine/Dragon/license.txt.meta
-Assets/Spine Examples/Spine/Eyes/eyes.atlas.txt
-Assets/Spine Examples/Spine/Eyes/eyes.atlas.txt.meta
-Assets/Spine Examples/Spine/Eyes/eyes.json
-Assets/Spine Examples/Spine/Eyes/eyes.json.meta
-Assets/Spine Examples/Spine/Eyes/eyes.png
-Assets/Spine Examples/Spine/Eyes/eyes.png.meta
-Assets/Spine Examples/Spine/Eyes/eyes_Atlas.asset
-Assets/Spine Examples/Spine/Eyes/eyes_Atlas.asset.meta
-Assets/Spine Examples/Spine/Eyes/eyes_Material.mat
-Assets/Spine Examples/Spine/Eyes/eyes_Material.mat.meta
-Assets/Spine Examples/Spine/Eyes/eyes_SkeletonData.asset
-Assets/Spine Examples/Spine/Eyes/eyes_SkeletonData.asset.meta
-Assets/Spine Examples/Spine/FootSoldier/Equipment.meta
-Assets/Spine Examples/Spine/FootSoldier/FootSoldier.json
-Assets/Spine Examples/Spine/FootSoldier/FootSoldier.json.meta
-Assets/Spine Examples/Spine/FootSoldier/FootSoldier_SkeletonData.asset
-Assets/Spine Examples/Spine/FootSoldier/FootSoldier_SkeletonData.asset.meta
-Assets/Spine Examples/Spine/FootSoldier/FS_White.atlas.txt
-Assets/Spine Examples/Spine/FootSoldier/FS_White.atlas.txt.meta
-Assets/Spine Examples/Spine/FootSoldier/FS_White.png
-Assets/Spine Examples/Spine/FootSoldier/FS_White.png.meta
-Assets/Spine Examples/Spine/FootSoldier/FS_White_Atlas.asset
-Assets/Spine Examples/Spine/FootSoldier/FS_White_Atlas.asset.meta
-Assets/Spine Examples/Spine/FootSoldier/FS_White_Material.mat
-Assets/Spine Examples/Spine/FootSoldier/FS_White_Material.mat.meta
-Assets/Spine Examples/Spine/FootSoldier/license.txt
-Assets/Spine Examples/Spine/FootSoldier/license.txt.meta
-Assets/Spine Examples/Spine/FootSoldier/Equipment/Equipment.atlas.txt
-Assets/Spine Examples/Spine/FootSoldier/Equipment/Equipment.atlas.txt.meta
-Assets/Spine Examples/Spine/FootSoldier/Equipment/Equipment.png
-Assets/Spine Examples/Spine/FootSoldier/Equipment/Equipment.png.meta
-Assets/Spine Examples/Spine/FootSoldier/Equipment/Equipment_Atlas.asset
-Assets/Spine Examples/Spine/FootSoldier/Equipment/Equipment_Atlas.asset.meta
-Assets/Spine Examples/Spine/FootSoldier/Equipment/Equipment_Material.mat
-Assets/Spine Examples/Spine/FootSoldier/Equipment/Equipment_Material.mat.meta
-Assets/Spine Examples/Spine/Gauge/Gauge.atlas.txt
-Assets/Spine Examples/Spine/Gauge/Gauge.atlas.txt.meta
-Assets/Spine Examples/Spine/Gauge/Gauge.json
-Assets/Spine Examples/Spine/Gauge/Gauge.json.meta
-Assets/Spine Examples/Spine/Gauge/Gauge.png
-Assets/Spine Examples/Spine/Gauge/Gauge.png.meta
-Assets/Spine Examples/Spine/Gauge/Gauge_Atlas.asset
-Assets/Spine Examples/Spine/Gauge/Gauge_Atlas.asset.meta
-Assets/Spine Examples/Spine/Gauge/Gauge_Material.mat
-Assets/Spine Examples/Spine/Gauge/Gauge_Material.mat.meta
-Assets/Spine Examples/Spine/Gauge/Gauge_SkeletonData.asset
-Assets/Spine Examples/Spine/Gauge/Gauge_SkeletonData.asset.meta
-Assets/Spine Examples/Spine/Gauge/ReferenceAssets.meta
-Assets/Spine Examples/Spine/Gauge/ReferenceAssets/Fill.asset
-Assets/Spine Examples/Spine/Gauge/ReferenceAssets/Fill.asset.meta
-Assets/Spine Examples/Spine/Goblins/dagger.png
-Assets/Spine Examples/Spine/Goblins/dagger.png.meta
-Assets/Spine Examples/Spine/Goblins/goblins.atlas.txt
-Assets/Spine Examples/Spine/Goblins/goblins.atlas.txt.meta
-Assets/Spine Examples/Spine/Goblins/goblins.json
-Assets/Spine Examples/Spine/Goblins/goblins.json.meta
-Assets/Spine Examples/Spine/Goblins/goblins.png
-Assets/Spine Examples/Spine/Goblins/goblins.png.meta
-Assets/Spine Examples/Spine/Goblins/goblins_Atlas.asset
-Assets/Spine Examples/Spine/Goblins/goblins_Atlas.asset.meta
-Assets/Spine Examples/Spine/Goblins/goblins_Material.mat
-Assets/Spine Examples/Spine/Goblins/goblins_Material.mat.meta
-Assets/Spine Examples/Spine/Goblins/goblins_SkeletonData.asset
-Assets/Spine Examples/Spine/Goblins/goblins_SkeletonData.asset.meta
-Assets/Spine Examples/Spine/Hero/hero-pro.atlas.txt
-Assets/Spine Examples/Spine/Hero/hero-pro.atlas.txt.meta
-Assets/Spine Examples/Spine/Hero/hero-pro.json
-Assets/Spine Examples/Spine/Hero/hero-pro.json.meta
-Assets/Spine Examples/Spine/Hero/hero-pro.png
-Assets/Spine Examples/Spine/Hero/hero-pro.png.meta
-Assets/Spine Examples/Spine/Hero/hero-pro_Atlas.asset
-Assets/Spine Examples/Spine/Hero/hero-pro_Atlas.asset.meta
-Assets/Spine Examples/Spine/Hero/hero-pro_Material.mat
-Assets/Spine Examples/Spine/Hero/hero-pro_Material.mat.meta
-Assets/Spine Examples/Spine/Hero/hero-pro_SkeletonData.asset
-Assets/Spine Examples/Spine/Hero/hero-pro_SkeletonData.asset.meta
-Assets/Spine Examples/Spine/Hero/license.txt
-Assets/Spine Examples/Spine/Hero/license.txt.meta
-Assets/Spine Examples/Spine/Hero/ReferenceAssets.meta
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/attack.asset
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/attack.asset.meta
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/crouch-from fall.asset
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/crouch-from fall.asset.meta
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/crouch.asset
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/crouch.asset.meta
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/fall.asset
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/fall.asset.meta
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/head-turn.asset
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/head-turn.asset.meta
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/idle-from fall.asset
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/idle-from fall.asset.meta
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/idle.asset
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/idle.asset.meta
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/jump.asset
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/jump.asset.meta
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/run-from fall.asset
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/run-from fall.asset.meta
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/run.asset
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/run.asset.meta
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/walk.asset
-Assets/Spine Examples/Spine/Hero/ReferenceAssets/walk.asset.meta
-Assets/Spine Examples/Spine/Raggedy Spineboy/Raggedy Spineboy.atlas.txt
-Assets/Spine Examples/Spine/Raggedy Spineboy/Raggedy Spineboy.atlas.txt.meta
-Assets/Spine Examples/Spine/Raggedy Spineboy/raggedy spineboy.json
-Assets/Spine Examples/Spine/Raggedy Spineboy/raggedy spineboy.json.meta
-Assets/Spine Examples/Spine/Raggedy Spineboy/Raggedy Spineboy.png
-Assets/Spine Examples/Spine/Raggedy Spineboy/Raggedy Spineboy.png.meta
-Assets/Spine Examples/Spine/Raggedy Spineboy/Raggedy Spineboy_Atlas.asset
-Assets/Spine Examples/Spine/Raggedy Spineboy/Raggedy Spineboy_Atlas.asset.meta
-Assets/Spine Examples/Spine/Raggedy Spineboy/Raggedy Spineboy_Material.mat
-Assets/Spine Examples/Spine/Raggedy Spineboy/Raggedy Spineboy_Material.mat.meta
-Assets/Spine Examples/Spine/Raggedy Spineboy/Raggedy Spineboy_SkeletonData.asset
-Assets/Spine Examples/Spine/Raggedy Spineboy/Raggedy Spineboy_SkeletonData.asset.meta
-Assets/Spine Examples/Spine/Raptor/raptor.atlas.txt
-Assets/Spine Examples/Spine/Raptor/raptor.atlas.txt.meta
-Assets/Spine Examples/Spine/Raptor/raptor.json
-Assets/Spine Examples/Spine/Raptor/raptor.json.meta
-Assets/Spine Examples/Spine/Raptor/raptor.png
-Assets/Spine Examples/Spine/Raptor/raptor.png.meta
-Assets/Spine Examples/Spine/Raptor/raptor_Atlas.asset
-Assets/Spine Examples/Spine/Raptor/raptor_Atlas.asset.meta
-Assets/Spine Examples/Spine/Raptor/raptor_Material.mat
-Assets/Spine Examples/Spine/Raptor/raptor_Material.mat.meta
-Assets/Spine Examples/Spine/Raptor/raptor_SkeletonData.asset
-Assets/Spine Examples/Spine/Raptor/raptor_SkeletonData.asset.meta
-Assets/Spine Examples/Spine/Raptor/ReferenceAssets.meta
-Assets/Spine Examples/Spine/Raptor/ReferenceAssets/gungrab.asset
-Assets/Spine Examples/Spine/Raptor/ReferenceAssets/gungrab.asset.meta
-Assets/Spine Examples/Spine/Raptor/ReferenceAssets/gunkeep.asset
-Assets/Spine Examples/Spine/Raptor/ReferenceAssets/gunkeep.asset.meta
-Assets/Spine Examples/Spine/Raptor/ReferenceAssets/Jump.asset
-Assets/Spine Examples/Spine/Raptor/ReferenceAssets/Jump.asset.meta
-Assets/Spine Examples/Spine/Raptor/ReferenceAssets/walk.asset
-Assets/Spine Examples/Spine/Raptor/ReferenceAssets/walk.asset.meta
-Assets/Spine Examples/Spine/spineboy-pro/spineboy-pro.atlas.txt
-Assets/Spine Examples/Spine/spineboy-pro/spineboy-pro.atlas.txt.meta
-Assets/Spine Examples/Spine/spineboy-pro/spineboy-pro.json
-Assets/Spine Examples/Spine/spineboy-pro/spineboy-pro.json.meta
-Assets/Spine Examples/Spine/spineboy-pro/spineboy-pro.png
-Assets/Spine Examples/Spine/spineboy-pro/spineboy-pro.png.meta
-Assets/Spine Examples/Spine/spineboy-pro/spineboy-pro_Atlas.asset
-Assets/Spine Examples/Spine/spineboy-pro/spineboy-pro_Atlas.asset.meta
-Assets/Spine Examples/Spine/spineboy-pro/spineboy-pro_Material.mat
-Assets/Spine Examples/Spine/spineboy-pro/spineboy-pro_Material.mat.meta
-Assets/Spine Examples/Spine/spineboy-pro/spineboy-pro_SkeletonData.asset
-Assets/Spine Examples/Spine/spineboy-pro/spineboy-pro_SkeletonData.asset.meta
-Assets/Spine Examples/Spine/spineboy-unity/Equips.meta
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets.meta
-Assets/Spine Examples/Spine/spineboy-unity/spineboy-unity.json
-Assets/Spine Examples/Spine/spineboy-unity/spineboy-unity.json.meta
-Assets/Spine Examples/Spine/spineboy-unity/spineboy-unity_SkeletonData.asset
-Assets/Spine Examples/Spine/spineboy-unity/spineboy-unity_SkeletonData.asset.meta
-Assets/Spine Examples/Spine/spineboy-unity/spineboy.atlas.txt
-Assets/Spine Examples/Spine/spineboy-unity/spineboy.atlas.txt.meta
-Assets/Spine Examples/Spine/spineboy-unity/spineboy.png
-Assets/Spine Examples/Spine/spineboy-unity/spineboy.png.meta
-Assets/Spine Examples/Spine/spineboy-unity/spineboy_Atlas.asset
-Assets/Spine Examples/Spine/spineboy-unity/spineboy_Atlas.asset.meta
-Assets/Spine Examples/Spine/spineboy-unity/spineboy_Material Fill.mat
-Assets/Spine Examples/Spine/spineboy-unity/spineboy_Material Fill.mat.meta
-Assets/Spine Examples/Spine/spineboy-unity/spineboy_Material.mat
-Assets/Spine Examples/Spine/spineboy-unity/spineboy_Material.mat.meta
-Assets/Spine Examples/Spine/spineboy-unity/Equips/goggles-normal.png
-Assets/Spine Examples/Spine/spineboy-unity/Equips/goggles-normal.png.meta
-Assets/Spine Examples/Spine/spineboy-unity/Equips/goggles-tactical.png
-Assets/Spine Examples/Spine/spineboy-unity/Equips/goggles-tactical.png.meta
-Assets/Spine Examples/Spine/spineboy-unity/Equips/gun-freeze.png
-Assets/Spine Examples/Spine/spineboy-unity/Equips/gun-freeze.png.meta
-Assets/Spine Examples/Spine/spineboy-unity/Equips/gun-normal.png
-Assets/Spine Examples/Spine/spineboy-unity/Equips/gun-normal.png.meta
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/death.asset
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/death.asset.meta
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/diagonal.asset
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/diagonal.asset.meta
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/footstep.asset
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/footstep.asset.meta
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/frozen.asset
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/frozen.asset.meta
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/gun toss.asset
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/gun toss.asset.meta
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/hit old.asset
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/hit old.asset.meta
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/hit.asset
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/hit.asset.meta
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/idle.asset
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/idle.asset.meta
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/idlebag.asset
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/idlebag.asset.meta
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/jump old.asset
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/jump old.asset.meta
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/jump rm.asset
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/jump rm.asset.meta
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/jump.asset
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/jump.asset.meta
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/pole.asset
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/pole.asset.meta
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/run rm.asset
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/run rm.asset.meta
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/run.asset
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/run.asset.meta
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/shoot.asset
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/shoot.asset.meta
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/walk rm.asset
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/walk rm.asset.meta
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/walk.asset
-Assets/Spine Examples/Spine/spineboy-unity/ReferenceAssets/walk.asset.meta
-Assets/Spine Examples/Spine/Spineunitygirl/Doi.atlas.txt
-Assets/Spine Examples/Spine/Spineunitygirl/Doi.atlas.txt.meta
-Assets/Spine Examples/Spine/Spineunitygirl/Doi.json
-Assets/Spine Examples/Spine/Spineunitygirl/Doi.json.meta
-Assets/Spine Examples/Spine/Spineunitygirl/Doi.png
-Assets/Spine Examples/Spine/Spineunitygirl/Doi.png.meta
-Assets/Spine Examples/Spine/Spineunitygirl/Doi_Atlas.asset
-Assets/Spine Examples/Spine/Spineunitygirl/Doi_Atlas.asset.meta
-Assets/Spine Examples/Spine/Spineunitygirl/Doi_Material.mat
-Assets/Spine Examples/Spine/Spineunitygirl/Doi_SkeletonData.asset
-Assets/Spine Examples/Spine/Spineunitygirl/Doi_SkeletonData.asset.meta
-Assets/Spine Examples/Spine/Spineunitygirl/ReferenceAssets.meta
-Assets/Spine Examples/Spine/Spineunitygirl/ReferenceAssets/blink.asset
-Assets/Spine Examples/Spine/Spineunitygirl/ReferenceAssets/blink.asset.meta
-Assets/Spine Examples/Spine/Spineunitygirl/ReferenceAssets/main.asset
-Assets/Spine Examples/Spine/Spineunitygirl/ReferenceAssets/main.asset.meta
-Assets/Spine Examples/Spine/Strechyman/stretchyman-diffuse-pma.atlas.txt
-Assets/Spine Examples/Spine/Strechyman/stretchyman-diffuse-pma.atlas.txt.meta
-Assets/Spine Examples/Spine/Strechyman/stretchyman-diffuse-pma.png
-Assets/Spine Examples/Spine/Strechyman/stretchyman-diffuse-pma.png.meta
-Assets/Spine Examples/Spine/Strechyman/stretchyman-diffuse-pma_Atlas.asset
-Assets/Spine Examples/Spine/Strechyman/stretchyman-diffuse-pma_Atlas.asset.meta
-Assets/Spine Examples/Spine/Strechyman/stretchyman-diffuse-pma_Material.mat
-Assets/Spine Examples/Spine/Strechyman/stretchyman-diffuse-pma_Material.mat.meta
-Assets/Spine Examples/Spine/Strechyman/stretchyman-emission.png
-Assets/Spine Examples/Spine/Strechyman/stretchyman-emission.png.meta
-Assets/Spine Examples/Spine/Strechyman/stretchyman-normals.png
-Assets/Spine Examples/Spine/Strechyman/stretchyman-normals.png.meta
-Assets/Spine Examples/Spine/Strechyman/stretchyman.json
-Assets/Spine Examples/Spine/Strechyman/stretchyman.json.meta
-Assets/Spine Examples/Spine/Strechyman/stretchyman_SkeletonData.asset
-Assets/Spine Examples/Spine/Strechyman/stretchyman_SkeletonData.asset.meta
-Assets/Spine/spine-unity/Modules/Ragdoll/SkeletonRagdoll.cs.meta
-Assets/Resources/DataFile/test1
-Assets/Resources/DataFile/test1.meta
-Assets/Best HTTP (Pro).meta
-Assets/Best HTTP (Pro)/BestHTTP.meta
-Assets/Best HTTP (Pro)/BestHTTP/Authentication.meta
-Assets/Best HTTP (Pro)/BestHTTP/Authentication/Credentials.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Authentication/Digest.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Authentication/DigestStore.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Caching.meta
-Assets/Best HTTP (Pro)/BestHTTP/Caching/HTTPCacheFileInfo.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Caching/HTTPCacheFileLock.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Caching/HTTPCacheMaintananceParams.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Caching/HTTPCacheService.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Cookies.meta
-Assets/Best HTTP (Pro)/BestHTTP/Cookies/Cookie.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Cookies/CookieJar.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Decompression.meta
-Assets/Best HTTP (Pro)/BestHTTP/Decompression/CRC32.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Decompression/Deflate.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Decompression/DeflateStream.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Decompression/GZipStream.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Decompression/InfTree.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Decompression/Inflate.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Decompression/ZTree.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Decompression/Zlib.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Decompression/ZlibBaseStream.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Decompression/ZlibCodec.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Decompression/ZlibConstants.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Decompression/ZlibStream.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Extensions.meta
-Assets/Best HTTP (Pro)/BestHTTP/Extensions/Extensions.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Extensions/HeartbeatManager.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Extensions/KeyValuePair.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Extensions/KeyValuePairList.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Extensions/WWWAuthenticateHeaderParser.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Forms.meta
-Assets/Best HTTP (Pro)/BestHTTP/Forms/HTTPFieldData.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Forms/HTTPFormBase.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Forms/HTTPFormUsage.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Forms/Implementations.meta
-Assets/Best HTTP (Pro)/BestHTTP/Forms/Implementations/HTTPMultiPartForm.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Forms/Implementations/HTTPUrlEncodedForm.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Forms/Implementations/UnityForm.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/HTTPConnection.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/HTTPConnectionStates.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/HTTPManager.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/HTTPMethods.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/HTTPProtocolFactory.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/HTTPProxy.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/HTTPRange.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/HTTPRequest.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/HTTPRequestStatus.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/HTTPResponse.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/HTTPUpdateDelegator.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/JSON.meta
-Assets/Best HTTP (Pro)/BestHTTP/JSON/JSON.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Logger.meta
-Assets/Best HTTP (Pro)/BestHTTP/Logger/DefaultLogger.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Logger/ILogger.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/PlatformSupport.meta
-Assets/Best HTTP (Pro)/BestHTTP/PlatformSupport/Cryptography.meta
-Assets/Best HTTP (Pro)/BestHTTP/PlatformSupport/Cryptography/MD5CryptoServiceProvider.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/PlatformSupport/IO.meta
-Assets/Best HTTP (Pro)/BestHTTP/PlatformSupport/IO/Directory.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/PlatformSupport/IO/File.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/PlatformSupport/IO/FileEnums.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/PlatformSupport/IO/FileHelper.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/PlatformSupport/IO/FileStream.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/PlatformSupport/IO/Infos.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/PlatformSupport/Threading.meta
-Assets/Best HTTP (Pro)/BestHTTP/PlatformSupport/Threading/Thread.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Proxy.meta
-Assets/Best HTTP (Pro)/BestHTTP/Proxy/HTTPProxyResponse.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/SocketIO.meta
-Assets/Best HTTP (Pro)/BestHTTP/SocketIO/Enums.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/SocketIO/Error.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/SocketIO/Events.meta
-Assets/Best HTTP (Pro)/BestHTTP/SocketIO/Events/EventDescriptor.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/SocketIO/Events/EventNames.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/SocketIO/Events/EventTable.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/SocketIO/HandshakeData.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/SocketIO/Interfaces.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/SocketIO/JsonEncoders.meta
-Assets/Best HTTP (Pro)/BestHTTP/SocketIO/JsonEncoders/DefaultJSonEncoder.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/SocketIO/JsonEncoders/IJSonEncoder.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/SocketIO/Packet.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/SocketIO/Socket.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/SocketIO/SocketManager.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/SocketIO/SocketOptions.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/SocketIO/Transports.meta
-Assets/Best HTTP (Pro)/BestHTTP/SocketIO/Transports/ITransport.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/SocketIO/Transports/PollingTransport.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/SocketIO/Transports/WebSocketTransport.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/Statistics.meta
-Assets/Best HTTP (Pro)/BestHTTP/Statistics/Statistics.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/WebSocket.meta
-Assets/Best HTTP (Pro)/BestHTTP/WebSocket/Frames.meta
-Assets/Best HTTP (Pro)/BestHTTP/WebSocket/Frames/WebSocketFrameReader.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/WebSocket/Frames/WebSocketFrameTypes.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/WebSocket/Frames/WebSocketFrameWriters.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/WebSocket/WebSocket.cs.meta
-Assets/Best HTTP (Pro)/BestHTTP/WebSocket/WebSocketResponse.cs.meta
-Assets/Best HTTP (Pro)/BestHTTPDocumentationEN.pdf.meta
-Assets/Best HTTP (Pro)/Examples.meta
-Assets/Best HTTP (Pro)/Examples/AssetBundleSample.cs.meta
-Assets/Best HTTP (Pro)/Examples/CacheMaintenanceSample.cs.meta
-Assets/Best HTTP (Pro)/Examples/CodeBlocks.cs.meta
-Assets/Best HTTP (Pro)/Examples/GUIHelper.cs.meta
-Assets/Best HTTP (Pro)/Examples/LargeFileDownloadSample.cs.meta
-Assets/Best HTTP (Pro)/Examples/LitJson.meta
-Assets/Best HTTP (Pro)/Examples/LitJson/IJsonWrapper.cs.meta
-Assets/Best HTTP (Pro)/Examples/LitJson/JsonData.cs.meta
-Assets/Best HTTP (Pro)/Examples/LitJson/JsonException.cs.meta
-Assets/Best HTTP (Pro)/Examples/LitJson/JsonMapper.cs.meta
-Assets/Best HTTP (Pro)/Examples/LitJson/JsonMockWrapper.cs.meta
-Assets/Best HTTP (Pro)/Examples/LitJson/JsonReader.cs.meta
-Assets/Best HTTP (Pro)/Examples/LitJson/JsonWriter.cs.meta
-Assets/Best HTTP (Pro)/Examples/LitJson/Lexer.cs.meta
-Assets/Best HTTP (Pro)/Examples/LitJson/ParserToken.cs.meta
-Assets/Best HTTP (Pro)/Examples/SampleSelector.cs.meta
-Assets/Best HTTP (Pro)/Examples/SampleSelector.unity.meta
-Assets/Best HTTP (Pro)/Examples/SocketIO Json Encoders.meta
-Assets/Best HTTP (Pro)/Examples/SocketIO Json Encoders/JsonDotNetEncoder.cs.meta
-Assets/Best HTTP (Pro)/Examples/SocketIO Json Encoders/LitJsonEncoder.cs.meta
-Assets/Best HTTP (Pro)/Examples/SocketIOChatSample.cs.meta
-Assets/Best HTTP (Pro)/Examples/SocketIOWePlaySample.cs.meta
-Assets/Best HTTP (Pro)/Examples/TextureDownloadSample.cs.meta
-Assets/Best HTTP (Pro)/Examples/UploadStream.cs.meta
-Assets/Best HTTP (Pro)/Examples/WebSocketSample.cs.meta
-Assets/Best HTTP (Pro)/link.xml.meta
-Assets/Plugins.meta
-Assets/Plugins/Metro.meta
-Assets/Plugins/Metro/TcpClientImplementation.dll.meta
-Assets/Plugins/TcpClientImplementation.dll.mdb.meta
-Assets/Plugins/TcpClientImplementation.dll.meta
-Assets/Plugins/WP8.meta
-Assets/Plugins/WP8/TcpClientImplementation.dll.meta
-Assets/Spine Examples/Spine/Spineunitygirl/Doi_Material.mat.meta
-Assets/Best HTTP (Pro)/TcpClientImplementation.zip.meta
-Assets/Animation/Test/dimian_ex.meta~0786f40abe153f77f661a45ef3ac187306061b34
-Assets/Animation/Test/dimian_ex.meta~0786f40abe153f77f661a45ef3ac187306061b34.meta
-Assets/Animation/Test/dimian_ex.meta~HEAD
-Assets/Animation/Test/dimian_ex.meta~HEAD.meta
-Assets/Spine/spine-unity/Modules/Ragdoll.meta~0786f40abe153f77f661a45ef3ac187306061b34
-Assets/Spine/spine-unity/Modules/Ragdoll.meta~0786f40abe153f77f661a45ef3ac187306061b34.meta
-Assets/Spine/spine-unity/Modules/Ragdoll.meta~HEAD_1
-Assets/Spine/spine-unity/Modules/Ragdoll.meta~HEAD_1.meta
-Assets/Spine/spine-unity.meta~2db7c8730f0e688e12e95e6f950c206ab21ae8a3.meta
-Assets/Spine/spine-unity.meta~HEAD.meta
-Assets/Spine/spine-unity/Modules.meta~2db7c8730f0e688e12e95e6f950c206ab21ae8a3.meta
-Assets/Scripts/Google.Protobuf/Google.Protobuf.csproj.meta
-Assets/Scripts/Google.Protobuf/Google.Protobuf.sln.meta
-Assets/Scripts/Google.Protobuf/obj.meta
-Assets/Scripts/Controllers/BattleSystem/BattleTool.cs.meta
-Assets/Scripts/Controllers/BattleSystem/BattleFlow/AddBuffFlow.cs.meta
-Assets/Scripts/Controllers/BattleSystem/BattleFlow/BuffContinueHurtFlow.cs.meta
-Assets/Scripts/Controllers/BattleSystem/BattleFlow/BuffHurtFlow.cs.meta
-Assets/Scripts/Controllers/BattleSystem/BattleFlow/GameBombHurtFlow.cs.meta
-Assets/Scripts/Controllers/BattleSystem/BattleFlow/GamePropHurtFlow.cs.meta
-Assets/Scripts/Controllers/BattleSystem/BattleFlow/ParryBackFlow.cs.meta
+
