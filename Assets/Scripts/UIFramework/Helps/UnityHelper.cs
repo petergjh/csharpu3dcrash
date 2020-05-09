@@ -99,15 +99,28 @@ namespace UIFrame
         }
 
 
+        ///// <summary>
+        ///// 给子节点添加父对象方法
+        ///// </summary>
+        ///// <param name="parents">父对象的方位</param>
+        ///// <param name="child">子对象的方法</param>
+        //public static void AddChildNodeToParentNode(Transform parents, Transform child)
+        //{
+        //    Debug.Log("通用方法：给子节点添加父对象");
+        //    child.SetParent(parents, false);
+        //    child.localPosition = Vector3.zero;
+        //    child.localScale = Vector3.one;
+        //    child.localEulerAngles = Vector3.zero;
+        //}
+
         /// <summary>
-        /// 给子节点添加父对象方法
+        /// 给子节点添加父对象
         /// </summary>
-        /// <param name="parents">父对象的方位</param>
-        /// <param name="child">子对象的方法</param>
-        public static void AddChildNodeToParentNode(Transform parents, Transform child)
+        /// <param name="Parent"></param>
+        /// <param name="child"></param>
+        public static void AddParentNodeToChildNode(Transform Parent, Transform child)
         {
-            Debug.Log("通用方法：给子节点添加父对象");
-            child.SetParent(parents, false);
+            child.SetParent(Parent, false);
             child.localPosition = Vector3.zero;
             child.localScale = Vector3.one;
             child.localEulerAngles = Vector3.zero;

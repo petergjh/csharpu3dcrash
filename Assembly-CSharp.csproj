@@ -64,8 +64,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Archive\ArchiveManager.cs" />
+    <Compile Include="Assets\Scripts\Controllers\DDOLSingleton.cs" />
     <Compile Include="Assets\Scripts\Controllers\GameDelegate.cs" />
+    <Compile Include="Assets\Scripts\Controllers\IGameSystem.cs" />
     <Compile Include="Assets\Scripts\Controllers\MainManager.cs" />
+    <Compile Include="Assets\Scripts\Controllers\ManagerController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\Managers\AtlasManager.cs" />
+    <Compile Include="Assets\Scripts\Controllers\Managers\GameArchiveManager.cs" />
+    <Compile Include="Assets\Scripts\Models\CharacterArchive.cs" />
+    <Compile Include="Assets\Scripts\Models\GameArchive.cs" />
     <Compile Include="Assets\Scripts\ProjectConst.cs" />
     <Compile Include="Assets\Scripts\ShareMethods\GetNetStandardTime.cs" />
     <Compile Include="Assets\Scripts\ShareMethods\NetStatusPublisher.cs" />
@@ -86,9 +93,11 @@
     <Compile Include="Assets\Scripts\UIFramework\EventAndMessage\EventTriggerListener.cs" />
     <Compile Include="Assets\Scripts\UIFramework\EventAndMessage\MessageCenter.cs" />
     <Compile Include="Assets\Scripts\UIFramework\Exception\JsonAnalysisException.cs" />
+    <Compile Include="Assets\Scripts\UIFramework\Extend.cs" />
     <Compile Include="Assets\Scripts\UIFramework\Helps\ResourcesMgr.cs" />
     <Compile Include="Assets\Scripts\UIFramework\Helps\UIMaskManager.cs" />
     <Compile Include="Assets\Scripts\UIFramework\Helps\UnityHelper.cs" />
+    <Compile Include="Assets\Scripts\UIFramework\LauguageManager.cs" />
     <Compile Include="Assets\Scripts\UIFramework\Log\Log.cs" />
     <Compile Include="Assets\Scripts\UIFramework\Log\WLog.cs" />
     <Compile Include="Assets\Scripts\UIFramework\ResourcesMgr.cs" />

@@ -12,18 +12,19 @@ namespace DemoProject
         private void Awake()
         {
             // 窗体的性质
-            CurrentUIType.UIForms_Type = UIFormType.PopUP;
+            CurrentUIType.UIForms_Type = UIFormType.PopUp;
             CurrentUIType.UIForms_ShowMode = UIFormShowMode.ReverseChange;
-            CurrentUIType.UIForms_LucencyType = UIFormLucencyType.Translucence;
+            CurrentUIType.UIForms_LucencyType = UIFormLucenyType.Translucence;
 
             // 按钮的注册
             // BtnClose关闭按钮
-            RigisterButtonObjectEvent("BtnClose",
+            RegisterButtonObjectEvent("BtnClose",
                 p =>
                 {
                     CloseUIForm();
                 }
                 );
+        }
 
             // 接受消息
             //           MessageCenter.AddMsgListener("Props",
@@ -56,26 +57,53 @@ namespace DemoProject
             //            });
 
 
-            ReceiveMessage("Props", 
-                p =>
-                {
-                    if (TxtName)
+            //ReceiveMessage("Props", 
+            //    p =>
+            //    {
+            //        if (TxtName)
+            //        {
+            //            // TxtName.text = p.Values.ToString();
+            //            string[] strArray = p.Values as string[];
+            //            TxtName.text = strArray[0];
+            //            print("测试传递消息的值可以是不同的类型对象： " + strArray);
+            //        }
+            //        Debug.Log("监听并接收消息：" + p.Key + p.Values);
+            //    });
+
+        protected override void ReceiveMsg(KeyValuesUpdate KV)
+        {
+            switch (KV.Key)
+            {
+                case "DeleteYes":
                     {
-                        // TxtName.text = p.Values.ToString();
-                        string[] strArray = p.Values as string[];
+                       // ShowSaves();
+                        Debug.Log("监听并接收消息：" + KV.Key + KV.Value);
+                        Debug.Log("确认删档，刷新重载UI");
+
+                    }
+                    break;
+
+                case "Props":
+                    {
+                        string[] strArray = KV.Value as string[];
                         TxtName.text = strArray[0];
                         print("测试传递消息的值可以是不同的类型对象： " + strArray);
+
                     }
-                    Debug.Log("监听并接收消息：" + p.Key + p.Values);
-                });
+                    break;
+                
+            }
+        }
 
-        } // Awake_end
 
-    }
+
+    } // Awake_end
+
+}
     
 
 
 
 
-}
+
 

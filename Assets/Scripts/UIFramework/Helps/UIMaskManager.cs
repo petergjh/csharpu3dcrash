@@ -1,174 +1,214 @@
-﻿using System.Collections;
+﻿/***
+ * 
+ *    Title: "SUIFW"UI框架项目
+ *           主题： UI遮罩管理 
+ *    Description: 
+ *           功能： 实现对于任何对象的监听处理。
+ *    Date: 2019
+ *    Version: 0.1版本
+ *    Modify Recoder: 
+ *    
+ *   
+ */
+
+using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine;
+
 
 namespace UIFrame
 {
-    /// <summary>
-    /// UI遮罩管理器
-    /// </summary>
-    public class UIMaskManager:MonoBehaviour
+    public class UIMaskManager : MonoBehaviour
     {
-        // 本脚本私有单例
+        /*字段*/
+        //单例
         private static UIMaskManager _Instance = null;
 
-        // UI 根节点对象
-        private GameObject _GoCanvasRoot = null;
-        // UI脚本节点对象
+        /// <summary>
+        /// UI根节点对象
+        /// </summary>
+        private GameObject _objCanvasRoot = null;
+        /// <summary>
+        /// UI脚本节点对象
+        /// </summary>
         private Transform _TraUIScriptsNode = null;
-        // 顶层面板
-        private GameObject _GoTopPanel;
-        // 遮罩面板
-        private GameObject _GoMaskPanel;
-        // UI摄像机
-        private Camera _UICamera;
-        // UI摄像机原始的“层深”
-        private float _OriginalUICameralDepth;
+        /// <summary>
+        /// 顶层面板
+        /// </summary>
+        private GameObject _objTopPanel = null;
+        /// <summary>
+        /// 遮罩面板
+        /// </summary>
+        private GameObject _objMaskPanel = null;
+        /// <summary>
+        /// UI相机
+        /// </summary>
+        private Camera _UICamera = null;
+        /// <summary>
+        /// UI相机原始的层深
+        /// </summary>
+        /// <returns></returns>
+        private float _OriginalUICameraDepth = 0;
 
-            
-
-        // 得到实例 
+        /// <summary>
+        /// 得到实例
+        /// </summary>
+        /// <returns></returns>
         public static UIMaskManager GetInstance()
         {
-            if (_Instance==null)
+            if (_Instance == null)
             {
                 _Instance = new GameObject("_UIMaskManager").AddComponent<UIMaskManager>();
             }
-            Debug.Log("已得到一个遮罩管理器： _UIMaskManager");
-
             return _Instance;
         }
 
         private void Awake()
         {
-            Debug.Log("遮罩管理器UIMaskManager开始初始化。");
-            // 得到UI根节点对象、脚本节点对象
-            _GoCanvasRoot = GameObject.FindGameObjectWithTag(SysDefine.SYS_TAG_CANVAS);
-            _TraUIScriptsNode = UnityHelper.FindTheChildNode(_GoCanvasRoot, SysDefine.SYS_SCRIPTMANAGER_NODE);
-            Debug.LogFormat("获取UI根节点_CanvasRoot对象{0}、脚本节点对象{1}", _GoCanvasRoot, _TraUIScriptsNode);
-
-            // 把本脚本实例，作为“脚本节点对象”的子节点
-            UnityHelper.AddChildNodeToParentNode(_TraUIScriptsNode, this.gameObject.transform);
-            Debug.LogFormat("把遮罩管理器脚本挂到unity脚本节点上");
-
-            // 得到顶层面板
-            _GoTopPanel = _GoCanvasRoot;  // 确保 Canvas在unity左侧层级结构的最下方
-            Debug.LogFormat("已获取到顶层面板："+_GoTopPanel);
-
-            // 得到遮罩面板
-            _GoMaskPanel = UnityHelper.FindTheChildNode(_GoCanvasRoot, "_UIMaskPanel").gameObject;
-            Debug.LogFormat("已获取到遮罩面板："+_GoMaskPanel);
-
-            // 得到UI摄像机原始的层深
-            _UICamera = GameObject.FindGameObjectWithTag("_TagUICamera").GetComponent<Camera>();
+            //得到UI根节点对象、脚本节点对象
+            _objCanvasRoot = GameObject.FindGameObjectWithTag(SysDefine.SYS_TAG_CANVAS);
+            _TraUIScriptsNode = UnityHelper.FindTheChildNode(_objCanvasRoot, SysDefine.SYS_SCRIPTMANAGER_NODE);
+            //把本脚本实例作为，作为脚本节点的子对象
+            UnityHelper.AddParentNodeToChildNode(_TraUIScriptsNode, this.gameObject.transform);
+            //得到“顶层面板”、“遮罩面板”
+            _objTopPanel = _objCanvasRoot;
+            _objMaskPanel = UnityHelper.FindTheChildNode(_objCanvasRoot, "_UIMaskPanel").gameObject;
+            //得到UI摄像机原始的“层深”
+            _UICamera = GameObject.FindGameObjectWithTag("_UICamera").GetComponent<Camera>();
             if (_UICamera != null)
             {
-                _OriginalUICameralDepth = _UICamera.depth;
-                Debug.Log("得到UI摄像机原始层深值为："+ _OriginalUICameralDepth);
+                //得到原始的层深
+                _OriginalUICameraDepth = _UICamera.depth;
             }
             else
-            { Debug.Log(GetType() + "/Start()/UI_Camera is Null !, 请检查！"); }
-
+            {
+                Debug.Log(GetType() + "/Start()/UI_Camera Is Null!");
+            }
         }
 
         /// <summary>
         /// 设置遮罩状态
         /// </summary>
-        /// <param name="goDisplayUIForms">需要显示的UI窗体</param>
-        /// <param name="lucencyType">显示透明度属性</param>
-        public void SetMaskWindow(GameObject goDisplayUIForms, UIFormLucencyType lucencyType=UIFormLucencyType.Lucency)
+        /// <param name="objDisplay">需要显示的UI窗体</param>
+        /// <param name="LucenyType"></param>
+        public void SetMaskWindow(GameObject objDisplay,UIFormLucenyType LucenyType = UIFormLucenyType.Lucency)
         {
-            // 顶层窗体下移
-            _GoTopPanel.transform.SetAsLastSibling();
-            Debug.LogFormat("顶层窗体：{0}已完成下移",_GoTopPanel);
-
-            // 启用遮罩窗体，并根据窗体的透明度类型分别设置透明度
-            switch(lucencyType)
+            if (LucenyType == UIFormLucenyType.DnotMask)
             {
-                // 完全透明，不能穿透
-                case UIFormLucencyType.Lucency:
-                    Debug.Log("设置遮罩窗体为活动状态。");
-                    _GoMaskPanel.SetActive(true);
+                //显示窗体下移
+                objDisplay.transform.SetAsLastSibling();
+                //增加当前UI摄像机的层深（保证当前相机为最前显示）
+                if (_UICamera != null)
+                {
+                    _UICamera.depth = _UICamera.depth + 100;
+                }
+                return;
+            }
+            Canvas _MaskCanvas = _objMaskPanel.GetOrAddComponent<Canvas>();
+            _objMaskPanel.GetOrAddComponent<GraphicRaycaster>();
+            //顶层窗体下移
+            _objTopPanel.transform.SetAsLastSibling();
 
-                    Debug.LogFormat("启用遮罩，遮罩窗体类型为：{0}，设置透明度为：完全透明",lucencyType);
-                    Color newColor1 = new Color(SysDefine.SYS_UIMASK_LUCENCY_COLOR_RGB, SysDefine.SYS_UIMASK_LUCENCY_COLOR_RGB, SysDefine.SYS_UIMASK_LUCENCY_COLOR_RGB, SysDefine.SYS_UIMASK_LUCENCY_COLOR_RGB_A);
-                    Debug.LogFormat("设置颜色和透明度： "+ newColor1);
-
-                    _GoMaskPanel.GetComponent<Image>().color = newColor1;
-                    Debug.LogFormat(" 修改遮罩窗体图片组件的颜色和透明度: "+ newColor1);
-
-                    break;
-
-                // 半透明，不能穿透
-                case UIFormLucencyType.Translucence:
-                    Debug.LogFormat("启用遮罩，遮罩窗体类型为：{0}，设置透明度为：半透明度",lucencyType);
-                    _GoMaskPanel.SetActive(true);
-                    Color newColor2 = new Color(SysDefine.SYS_UIMASK_TRANS_LUCENCY_COLOR_RGB , SysDefine.SYS_UIMASK_TRANS_LUCENCY_COLOR_RGB, SysDefine.SYS_UIMASK_TRANS_LUCENCY_COLOR_RGB, SysDefine.SYS_UIMASK_TRANS_LUCENCY_COLOR_RGB_A);
-                    _GoMaskPanel.GetComponent<Image>().color = newColor2;
-                    break;
-
-                // 低透明，不能穿透
-                case UIFormLucencyType.ImPenetrable:
-                    Debug.LogFormat("启用遮罩，遮罩窗体类型为：{0}，设置透明度为：低透明度",lucencyType);
-                    _GoMaskPanel.SetActive(true);
-                    Color newColor3 = new Color(SysDefine.SYS_UIMASK_IMPENETRABLE_COLOR_RGB, SysDefine.SYS_UIMASK_IMPENETRABLE_COLOR_RGB, SysDefine.SYS_UIMASK_IMPENETRABLE_COLOR_RGB, SysDefine.SYS_UIMASK_IMPENTRABLE_COLOR_RGB_A);
-                    _GoMaskPanel.GetComponent<Image>().color = newColor3;
-                    break;
-
-                // 可以穿透
-                case UIFormLucencyType.Pentrate:
-                    Debug.Log("遮罩窗体允许穿透");
-                    if(_GoMaskPanel.activeInHierarchy)
+            if (UIManager._DicUIFormSortLayerCount.ContainsKey(objDisplay.name))
+            {
+                objDisplay.GetComponent<Canvas>().sortingOrder = UIManager._DicUIFormSortLayerCount[objDisplay.name]+2;
+                _MaskCanvas = _objMaskPanel.GetComponent<Canvas>();
+                _MaskCanvas.overrideSorting = true;
+                _MaskCanvas.enabled = true;
+                _MaskCanvas.sortingOrder = objDisplay.GetComponent<Canvas>().sortingOrder - 1;
+            }
+            else
+            {
+                if (_MaskCanvas != null)
+                {
+                    Destroy(_objMaskPanel.GetComponent<GraphicRaycaster>());
+                    Destroy(_MaskCanvas);
+                }
+            }
+            //启动遮罩窗体以及设置透明度
+            switch (LucenyType)
+            {
+                case UIFormLucenyType.Lucency:
                     {
-                        _GoMaskPanel.SetActive(false);
+                        _objMaskPanel.SetActive(true);
+                        Color newColor = new Color(
+                            SysDefine.SYS_LUCENCY_RGB, 
+                            SysDefine.SYS_LUCENCY_RGB, 
+                            SysDefine.SYS_LUCENCY_RGB, 
+                            SysDefine.SYS_LUCENCY_RGB_A
+                            );
+                        _objMaskPanel.GetComponent<Image>().color = newColor;
                     }
                     break;
-
-                default:
+                case UIFormLucenyType.Translucence:
+                    {
+                        _objMaskPanel.SetActive(true);
+                        Color newColor = new Color(
+                            SysDefine.SYS_TRANS_RGB,
+                            SysDefine.SYS_TRANS_RGB, 
+                            SysDefine.SYS_TRANS_RGB, 
+                            SysDefine.SYS_TRANS_RGB_A
+                            );
+                        _objMaskPanel.GetComponent<Image>().color = newColor;
+                    }
                     break;
-
+                case UIFormLucenyType.ImPenetrable:
+                    {
+                        _objMaskPanel.SetActive(true);
+                        Color newColor = new Color(
+                            SysDefine.SYS_IMPENETRABLE_RGB,
+                            SysDefine.SYS_IMPENETRABLE_RGB,
+                            SysDefine.SYS_IMPENETRABLE_RGB, 
+                            SysDefine.SYS_IMPENETRABLE_RGB_A
+                            );
+                        _objMaskPanel.GetComponent<Image>().color = newColor;
+                    }
+                    break;
+                case UIFormLucenyType.Pentrate:
+                    {
+                        print("允许穿透");
+                        if (_objMaskPanel.activeInHierarchy)
+                        {
+                            _objMaskPanel.SetActive(false);
+                            _objMaskPanel.GetComponent<Canvas>().enabled = false;
+                        }
+                    }
+                    break;
             }
-
-            // 遮罩窗体下移
-            // Debug.LogFormat("遮罩窗体：{0}已完成下移}",_GoMaskPanel);
-            _GoMaskPanel.transform.SetAsLastSibling();
-            Debug.LogFormat ("遮罩窗体:{0}已完成下移", _GoMaskPanel.ToString());
-
-            // 显示窗体的下移
-            goDisplayUIForms.transform.SetAsLastSibling();
-            Debug.LogFormat("显示窗体：{0}已完成下移", goDisplayUIForms.name);
-
-            // 增加当前UI摄像机的层深（保证当前摄像机为最前显示）
-            if(_UICamera != null)
-            {
-                _UICamera.depth = _UICamera.depth + 100;
-                Debug.LogFormat("当前UI摄像机的层深值已经由原来的：{0} 增加到了：{1}", _OriginalUICameralDepth, _UICamera.depth);
-            }
-        }
-
-        // 取消遮罩状态
-        public void CancelMaskWindow()
-        {
-            // 顶层窗体上移
-            _GoTopPanel.transform.SetAsFirstSibling();
-
-            // 禁用遮罩窗体
-            if(_GoMaskPanel.activeInHierarchy)
-            {
-                // 隐藏
-                _GoMaskPanel.SetActive(false);
-                Debug.LogFormat("遮罩窗体：{0}已完成隐藏",_GoMaskPanel);
-            }
-
-            // 恢复当前UI摄像机的层深
+            //遮罩窗体下移
+            _objMaskPanel.transform.SetAsLastSibling();
+            //显示窗体下移
+            objDisplay.transform.SetAsLastSibling();
+    
+            //增加当前UI摄像机的层深（保证当前相机为最前显示）
             if (_UICamera != null)
             {
-                _UICamera.depth = _OriginalUICameralDepth;  // 恢复层深
-                Debug.LogFormat("当前UI摄像机的层深值已恢复到原来的{0}", _OriginalUICameralDepth);
+                _UICamera.depth = _UICamera.depth + 100;
             }
         }
+
+        /// <summary>
+        /// 取消遮罩状态
+        /// </summary>
+        public void CancelMaskWindow()
+        {
+            //顶层窗体上移
+            _objTopPanel.transform.SetAsFirstSibling();
+            //禁用遮罩体
+            if(_objMaskPanel.activeInHierarchy)
+            {
+                //隐藏
+                _objMaskPanel.SetActive(false);
+            }
+
+            //恢复层深
+            if (_UICamera != null)
+            {
+                _UICamera.depth = _OriginalUICameraDepth;
+            }
+        }
+
     }
-
-
 }
+

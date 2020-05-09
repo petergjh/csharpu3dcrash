@@ -22,7 +22,7 @@
 
 
 using Managers;
-using Spine.Unity;
+//using Spine.Unity;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -74,7 +74,7 @@ namespace UIFrame
                 ReceiveMessage(MsgTypeName, ReceiveMsg);
             }
             //添加刷新货币的监听
-            ManagerController.Instance.MCoinManager.AddRefreshCoinArea(RefreshCoinBox);
+      //      ManagerController.Instance.MCoinManager.AddRefreshCoinArea(RefreshCoinBox);
         }
 
 
@@ -251,35 +251,35 @@ namespace UIFrame
             return sprite;
         }
 
-        /// <summary>
-        /// Spine切换动画
-        /// </summary>
-        /// <param name="SpineAnmi">spine动画的Transform</param>
-        /// <param name="AnmiName">切换的动画名</param>
-        protected void SpineAnmiChange(Transform SpineAnmi, string AnmiName,bool IsLoop = true)
-        {
-            SkeletonGraphic skeletonAnimation = SpineAnmi.GetComponent<SkeletonGraphic>();
-            skeletonAnimation.freeze = true;
-            skeletonAnimation.Skeleton.SetToSetupPose();
-            skeletonAnimation.AnimationState.ClearTracks();
-            skeletonAnimation.AnimationState.SetAnimation(0, AnmiName, IsLoop);
-            skeletonAnimation.startingLoop = IsLoop;
-            skeletonAnimation.freeze = false;
-        }
-        /// <summary>
-        /// Spine切换动画
-        /// </summary>
-        /// <param name="SpineAnmi"></param>
-        /// <param name="AnmiName"></param>
-        /// <param name="IsLoop"></param>
-        /// <param name="Time"></param>
-        protected void SpineAddNewAnmi(Transform SpineAnmi, string AnmiName, bool IsLoop = true,float Time = 0f)
-        {
-            SkeletonGraphic skeletonAnimation = SpineAnmi.GetComponent<SkeletonGraphic>();
-            skeletonAnimation.Skeleton.SetToSetupPose();
-            skeletonAnimation.AnimationState.ClearTracks();
-            skeletonAnimation.AnimationState.AddAnimation(0, AnmiName, IsLoop, Time);
-        }
+        ///// <summary>
+        ///// Spine切换动画
+        ///// </summary>
+        ///// <param name="SpineAnmi">spine动画的Transform</param>
+        ///// <param name="AnmiName">切换的动画名</param>
+        //protected void SpineAnmiChange(Transform SpineAnmi, string AnmiName,bool IsLoop = true)
+        //{
+        //    SkeletonGraphic skeletonAnimation = SpineAnmi.GetComponent<SkeletonGraphic>();
+        //    skeletonAnimation.freeze = true;
+        //    skeletonAnimation.Skeleton.SetToSetupPose();
+        //    skeletonAnimation.AnimationState.ClearTracks();
+        //    skeletonAnimation.AnimationState.SetAnimation(0, AnmiName, IsLoop);
+        //    skeletonAnimation.startingLoop = IsLoop;
+        //    skeletonAnimation.freeze = false;
+        //}
+        ///// <summary>
+        ///// Spine切换动画
+        ///// </summary>
+        ///// <param name="SpineAnmi"></param>
+        ///// <param name="AnmiName"></param>
+        ///// <param name="IsLoop"></param>
+        ///// <param name="Time"></param>
+        //protected void SpineAddNewAnmi(Transform SpineAnmi, string AnmiName, bool IsLoop = true,float Time = 0f)
+        //{
+        //    SkeletonGraphic skeletonAnimation = SpineAnmi.GetComponent<SkeletonGraphic>();
+        //    skeletonAnimation.Skeleton.SetToSetupPose();
+        //    skeletonAnimation.AnimationState.ClearTracks();
+        //    skeletonAnimation.AnimationState.AddAnimation(0, AnmiName, IsLoop, Time);
+        //}
 
         /// <summary>
         /// 注册按钮点击事件
@@ -312,7 +312,7 @@ namespace UIFrame
         /// <param name="UIFormName"></param>
         protected void OpenUIForm(string UIFormName)
         {
-            UIManager.GetIndtance().ShowUIForms(UIFormName);
+            UIManager.GetInstance().ShowUIForms(UIFormName);
         }
         /// <summary>
         /// 打开UI窗体并发送一条初始消息
@@ -322,7 +322,7 @@ namespace UIFrame
         /// <param name="msgContent"></param>
         protected void OpenUIForm(string UIFormName,string msgName, object msgContent = null)
         {
-            UIManager.GetIndtance().ShowUIForms(UIFormName);
+            UIManager.GetInstance().ShowUIForms(UIFormName);
             KeyValuesUpdate kvs = new KeyValuesUpdate(msgName, msgContent);
             MessageCenter.SendMessage(UIFormName, kvs);
         }
@@ -332,7 +332,7 @@ namespace UIFrame
         /// <param name="UIFormName"></param>
         protected void CloseUIForm(string UIFormName)
         {
-            UIManager.GetIndtance().CloseUIForms(UIFormName);
+            UIManager.GetInstance().CloseUIForms(UIFormName);
         }
 
         protected void CloseUIForm()
@@ -346,7 +346,7 @@ namespace UIFrame
             {
                 strUIFormName = strUIFormName.Substring(intPosition + 1);
             }
-            UIManager.GetIndtance().CloseUIForms(strUIFormName);
+            UIManager.GetInstance().CloseUIForms(strUIFormName);
         }
 
         /// <summary>
@@ -420,7 +420,7 @@ namespace UIFrame
         /// <param name="ChildTrans"></param>
         protected void SetSavePrefabPos(Transform ChildTrans)
         {
-            UIManager.GetIndtance().SetSavePrefab(ChildTrans);
+            UIManager.GetInstance().SetSavePrefab(ChildTrans);
         }
 
        /// <summary>

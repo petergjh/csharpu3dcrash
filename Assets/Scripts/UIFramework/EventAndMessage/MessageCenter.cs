@@ -1,27 +1,44 @@
-﻿using System.Collections;
+﻿/***
+ * 
+ *  Title: UI框架
+ *          主题: 消息(传递)中心
+ *  Description:
+ *          功能: 负责UI框架中，所有UI窗体中间的数据传值
+ *      
+ *          
+ *  Date:2019
+ *  Version:0.1
+ *  Modify Recoder:
+ * 
+ * 
+ * 
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace UIFrame
 {
-    /// <summary>
-    /// 消息（传递）中心
-    /// 负责UI框架中，所有UI窗体间的数据传值
-    /// </summary>
     public class MessageCenter
     {
-        // 定义一个委托. 观察者模式
-        public delegate void DelegateMessageDelivery(KeyValueUpdate kv);
-
-        // 声明委托实例. 消息中心缓存集合： string: 监听的类型（ 数据大的分类）， DelegateMessageDelivery： 监听到以后要执行的委托
-        public static Dictionary<string, DelegateMessageDelivery> _dicMessages = new Dictionary<string, DelegateMessageDelivery>();
+        /// <summary>
+        /// 委托：消息传递
+        /// </summary>
+        public delegate void DelMessageDelivery(KeyValuesUpdate KV);
+        /// <summary>
+        /// 消息中心缓存集合
+        /// <key:数据的分类>
+        /// <value:数据执行委托>
+        /// </summary>
+        public static Dictionary<string, DelMessageDelivery> _dicMessages = new Dictionary<string, DelMessageDelivery>();
 
         /// <summary>
-        /// 增加委托指向的方法：监听消息
+        /// 添加消息的监听
         /// </summary>
         /// <param name="messageType">消息分类</param>
         /// <param name="handler">消息委托</param>
-        public static void AddMsgListener(string messageType, DelegateMessageDelivery handler)
+        public static void AddMsgListener(string messageType, DelMessageDelivery handler)
         {
             if (!_dicMessages.ContainsKey(messageType))
             {
@@ -31,11 +48,11 @@ namespace UIFrame
         }
 
         /// <summary>
-        /// 委托指向的方法：取消消息的监听
+        /// 取消消息的监听
         /// </summary>
-        /// <param name="messageType"></param>
-        /// <param name="handler"></param>
-        public static void RemoveMsgListener(string messageType, DelegateMessageDelivery handler)
+        /// <param name="messageType">消息分类</param>
+        /// <param name="handler">消息委托</param>
+        public static void RemoveMsgListener(string messageType, DelMessageDelivery handler)
         {
             if (_dicMessages.ContainsKey(messageType))
             {
@@ -43,11 +60,10 @@ namespace UIFrame
             }
         }
 
-
         /// <summary>
-        /// 委托指向的方法：取消所有消息的监听
+        /// 清空所有消息监听
         /// </summary>
-        public static void RemoverAllMsgListener()
+        public static void ClearAllMsgListener()
         {
             if (_dicMessages != null)
             {
@@ -55,46 +71,83 @@ namespace UIFrame
             }
         }
 
-
         /// <summary>
-        /// 调用（执行）委托 (发送消息）
+        /// 通过消息种类清空某一类型的消息
         /// </summary>
-        /// <param name="messageType">消息的分类</param>
-        /// <param name="kv">键值对（对象）</param>
-        public static void SendMessage(string messageType, KeyValueUpdate kv)
+        /// <param name="messagetype"></param>
+        public static void ClearMsgListenerByMsgKind(string messagetype)
         {
-            DelegateMessageDelivery del;   // 实例化一个委托
-            if (_dicMessages.TryGetValue(messageType, out del))
+            if (_dicMessages != null)
             {
-                if (del != null)
+                if (_dicMessages.ContainsKey(messagetype))
                 {
-                    // 调用执行委托
-                    del(kv);
+                    _dicMessages.Remove(messagetype);
                 }
             }
         }
 
+
+        /// <summary>
+        /// 处理消息
+        /// </summary>
+        /// <param name="messageType"></param>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
+        public static void DisposeMessage(string messageType,string key,object value = null)
+        {
+            KeyValuesUpdate keyValues = new KeyValuesUpdate(key, value);
+            SendMessage(messageType, keyValues);
+        }
+        public static void DisposeMessage(string messageType,object value)
+        {
+            KeyValuesUpdate keyValues = new KeyValuesUpdate(SysDefine.SYS_MSG_NULL, value);
+            SendMessage(messageType, keyValues);
+        }
+        public static void DisposeMessage(string messageType)
+        {
+            KeyValuesUpdate keyValues = new KeyValuesUpdate(SysDefine.SYS_MSG_NULL, SysDefine.SYS_MSG_NULL);
+            SendMessage(messageType, keyValues);
+        }
+        /// <summary>
+        /// 发送消息
+        /// </summary>
+        /// <param name="messageType">消息的分类</param>
+        /// <param name="Kv">键值对对象</param>
+        public static void SendMessage(string messageType, KeyValuesUpdate Kv)
+        {
+            DelMessageDelivery del;
+            if (_dicMessages.TryGetValue(messageType, out del))
+            {
+                //调用委托
+                //del?.Invoke(Kv);
+
+                if (del != null)
+                {
+                    //调用委托
+                    del(Kv);
+                }
+            }
+        }
     }
 
-
     /// <summary>
-    /// 键值对更新类
+    /// 键值更新对
     /// 功能：配合委托，实现委托数据传递
     /// </summary>
-    public class KeyValueUpdate
+    public class KeyValuesUpdate
     {
         private string _Key;
         private object _Values;
-        public string Key { get { return _Key; } }
-        public object Values { get { return _Values; } }
 
-        // 构造函数初始化字段
-        public KeyValueUpdate(string key, object valueObj)
+        //只读Key
+        public string Key { get { return _Key; } }
+        //只读Value
+        public object Value { get { return _Values; } }
+
+        public KeyValuesUpdate(string key,object valueObj)
         {
             _Key = key;
             _Values = valueObj;
         }
     }
-
-
 }

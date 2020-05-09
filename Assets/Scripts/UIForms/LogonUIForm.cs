@@ -14,7 +14,7 @@ namespace DemoProject
             // 定义本窗体的性质
             base.CurrentUIType.UIForms_Type = UIFormType.Normal;
             base.CurrentUIType.UIForms_ShowMode = UIFormShowMode.Normal;
-            base.CurrentUIType.UIForms_LucencyType = UIFormLucencyType.Lucency; ;
+            base.CurrentUIType.UIForms_LucencyType = UIFormLucenyType.Lucency; ;
 
             // 查找按钮节点
             //Transform UILogonForm = GameObject.FindGameObjectWithTag("_TestTagLogonUIForm").transform;
@@ -29,7 +29,7 @@ namespace DemoProject
             //    EventTriggerListener.Get(goButton.gameObject).onClick = LogonSys;
             //}
 
-            RigisterButtonObjectEvent("Btn_OK", LogonSys);
+            RegisterButtonObjectEvent("Btn_OK", LogonSys);
         }
 
         /// <summary>

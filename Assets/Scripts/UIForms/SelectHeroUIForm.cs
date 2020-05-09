@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UIFrame;
+using Managers;
 
 namespace DemoProject
 {
@@ -22,7 +23,7 @@ namespace DemoProject
 
             // 事件注册：进入主城
             // RigisterButtonObjectEvent("BtnConfirm", EnterMainCityUIForm);
-            RigisterButtonObjectEvent("BtnConfirm",
+            RegisterButtonObjectEvent("BtnConfirm",
                 p =>
                 {
                     Debug.LogFormat("一个按钮打开多个窗体：使用Lamda表达式对同一按钮:{0}:{1}进行多个事件的委托注册响应.",this.name,p.name);
@@ -33,12 +34,12 @@ namespace DemoProject
                 );
 
             // 事件注册: 返回上一页
-            RigisterButtonObjectEvent("BtnClose", ReturnLogonUIForm);
+            RegisterButtonObjectEvent("BtnClose", ReturnLogonUIForm);
             // 可用Lambda表达式简写 
             // RigisterButtonObjectEvent("BtnClose", m => CloseUIForm());
 
             // 事件注册：按钮，打开英雄详情
-            RigisterButtonObjectEvent("BtnHero2",
+            RegisterButtonObjectEvent("BtnHero2",
                 p => OpenUIForm("HeroDetailUIForm"));
             Debug.Log("注册BtnMarket点击事件，打开MarketUIForm窗体");
 

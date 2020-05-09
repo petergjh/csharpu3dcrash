@@ -69,7 +69,7 @@ namespace UIFrame
             _LiLogArray = new List<string>();
 
             //日志文件路径
-            IConfigManager configMgr = new ConfigManagerByJson(SysDefine.SYS_PATH_SysConfigJson);
+            IConfigManager configMgr = new ConfigManagerByJson(SysDefine.SYS_PATH_CONFIG_LOG );
 
             //PC与编辑器环境下的路径，使用配置文件。
 #if UNITY_STANDALONE_WIN||UNITY_EDITOR

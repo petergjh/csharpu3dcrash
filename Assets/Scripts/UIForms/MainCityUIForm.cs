@@ -16,7 +16,7 @@ namespace DemoProject
             //CurrentUIType.UIForms_ShowMode = UIFormShowMode.HideOther;
 
             // 事件注册：按钮，打开游戏商城
-            RigisterButtonObjectEvent("BtnMarket",
+            RegisterButtonObjectEvent("BtnMarket",
                 p => OpenUIForm("MarketUIForm"));
             Debug.Log("注册BtnMarket点击事件，监听MarketUIForm窗体的打开");
 
@@ -27,7 +27,7 @@ namespace DemoProject
             //   );
 
             // 事件注册：按钮，关闭当前画面的两个窗体
-            RigisterButtonObjectEvent("BtnBack",
+            RegisterButtonObjectEvent("BtnBack",
             p=>
             {
                 // 关闭当前窗体

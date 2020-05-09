@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-using Models;
+//using Models;
 
 public delegate void ReceiveDamageResultHandler(string str);
 
@@ -16,4 +16,4 @@ public delegate void HttpRequestComplate(bool yes);
 /// <param name="skillid">打断该次吟唱的技能ID</param>
 /// <param name="split">技能中的第几段被打断</param>
 /// <param name="breakSong">打断吟唱的原因</param>
-public delegate void SongSkillBreakHandler(long uid, long attack, int skillid, int split, Init.BreakSongType breakSong);
+//public delegate void SongSkillBreakHandler(long uid, long attack, int skillid, int split, Init.BreakSongType breakSong);

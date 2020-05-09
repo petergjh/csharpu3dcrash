@@ -18,7 +18,7 @@ namespace UIFrame
         public UIFormShowMode UIForms_ShowMode = UIFormShowMode.Normal;
 
         // UI窗体透明度类型
-        public UIFormLucencyType UIForms_LucencyType = UIFormLucencyType.Lucency;
+        public UIFormLucenyType UIForms_LucencyType =UIFormLucenyType.Lucency;
 
 
         // 是否清空栈集合

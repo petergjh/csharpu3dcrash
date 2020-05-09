@@ -13,11 +13,11 @@ namespace DemoProject
             Debug.Log("英雄详情窗体HeroDetailUIForm开始初始化");
             // 窗体类型
             CurrentUIType.UIForms_ShowMode = UIFormShowMode.ReverseChange;
-            CurrentUIType.UIForms_Type = UIFormType.PopUP;
-            CurrentUIType.UIForms_LucencyType = UIFormLucencyType.Lucency;
+            CurrentUIType.UIForms_Type = UIFormType.PopUp;
+            CurrentUIType.UIForms_LucencyType = UIFormLucenyType.Lucency;
 
             // 事件注册
-            RigisterButtonObjectEvent("Btn_Close", 
+            RegisterButtonObjectEvent("Btn_Close", 
                 p=> CloseUIForm()
                 );
         }

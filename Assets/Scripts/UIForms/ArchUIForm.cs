@@ -4,9 +4,9 @@ using UnityEngine.UI;
 using UnityEngine;
 using DG.Tweening;
 using Managers;
-using Models;
+//using Models;
 using UIFrame;
-using UIFrame.UIDATACLASS;
+//using UIFrame.UIDATACLASS;
 using System;
 using System.IO;
 
@@ -26,9 +26,9 @@ public class ArchUIForm : BaseUIForm
     {
         MsgTypeName = NAME;
         // 窗体属性
-        CurrentUIType.UIForms_Type = UIFormType.PopUP;
+        CurrentUIType.UIForms_Type = UIFormType.PopUp;
         CurrentUIType.UIForms_ShowMode = UIFormShowMode.ReverseChange;
-        CurrentUIType.UIForms_LucencyType =UIFormLucencyType.ImPenetrable;
+        CurrentUIType.UIForms_LucencyType =UIFormLucenyType.ImPenetrable;
 
         ShowSaves();
     }
@@ -89,7 +89,7 @@ public class ArchUIForm : BaseUIForm
             MainManager.InitManager();
             Debug.Log(" 加载存档，启动游戏");
 
-            GameArchiveManager.LoadArchive(ArchID);
+            //GameArchiveManager.LoadArchive(ArchID);
             Debug.Log("已成功加载存档：" + ArchID);
             // 关闭窗体
             CloseUIForm();
@@ -98,7 +98,7 @@ public class ArchUIForm : BaseUIForm
             //SceneManager.LoadScene("lobbyScene");
             //OpenUIForm("RegisterUI");
             //Globe.LoadingSceneKind = LoadingKind.InitGame;
-            Globe.LodingScene("lobbyScene");
+            //Globe.LodingScene("lobbyScene");
             //UIManager.GetIndtance().CloseUIForms("ArchUIForm");
         }
         );
@@ -108,7 +108,7 @@ public class ArchUIForm : BaseUIForm
         {
             AniBtn("BtnAddArch");
             // 新建一个空的存档文件
-            GameArchiveManager.CreateFile(newfilename, null);
+            //GameArchiveManager.CreateFile(newfilename, null);
             Debug.Log("新建存档后刷新UI");
             ShowSaves();
             //OpenUIForm("ArchUIForm");

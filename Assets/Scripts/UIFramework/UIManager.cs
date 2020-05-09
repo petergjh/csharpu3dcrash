@@ -39,7 +39,14 @@ namespace UIFrame
         // UI管理脚本的节点
         private Transform _TraUIScripts = null;
 
-        // 得到实例
+        /// <summary>
+        /// 窗口的排序层集合
+        /// </summary>
+        public static Dictionary<string, int> _DicUIFormSortLayerCount;
+        private Transform _TraSavePrefab = null;
+
+
+        // 得到单例
         public static UIManager GetInstance()
         {
             if (_Instance==null)
@@ -200,6 +207,72 @@ namespace UIFrame
         }
 
 
+        /// <summary>
+        /// 添加一个UI窗体到显示列表
+        /// </summary>
+        /// <param name="UIFormName"></param>
+        public void AddUIFormToDicCurrent(string UIFormName)
+        {
+            BaseUIForm baseUIForm = null;
+            //参数检查
+            if (string.IsNullOrEmpty(UIFormName))
+            {
+                return;
+            }
+            //“所有UI窗体”集合中，如果没有记录，则直接返回
+            _DicAllUIForms.TryGetValue(UIFormName, out baseUIForm);
+            if (baseUIForm == null)
+            {
+                return;
+            }
+
+            if (!_DicCurrentShowUIForms.ContainsKey(UIFormName))
+            {
+                _DicCurrentShowUIForms.Add(UIFormName, baseUIForm);
+            }
+        }
+
+        /// <summary>
+        /// 从UI窗体显示列表移除一个UI窗体
+        /// </summary>
+        /// <param name="UIFormName"></param>
+        public void RemoveUIFormToDicCurrent(string UIFormName)
+        {
+            BaseUIForm baseUIForm = null;
+            //参数检查
+            if (string.IsNullOrEmpty(UIFormName))
+            {
+                return;
+            }
+            //“所有UI窗体”集合中，如果没有记录，则直接返回
+            _DicAllUIForms.TryGetValue(UIFormName, out baseUIForm);
+            if (baseUIForm == null)
+            {
+                return;
+            }
+
+            if (_DicCurrentShowUIForms.ContainsKey(UIFormName))
+            {
+                _DicCurrentShowUIForms.Remove(UIFormName);
+            }
+        }
+
+        /// <summary>
+        /// 设置保存的预设
+        /// </summary>
+        /// <param name="childTrans"></param>
+        public void SetSavePrefab(Transform childTrans)
+        {
+            childTrans.SetParent(_TraSavePrefab);
+            childTrans.localScale = new Vector3(1, 1, 1);
+            childTrans.localPosition = new Vector3(0, -10000, 0);
+        }
+
+
+
+
+
+
         #region 显示“UI管理器”内部核心数据，用来测试
 
         /// <summary>
@@ -317,7 +390,7 @@ namespace UIFrame
                         goCloneUIPrefabs.transform.SetParent(_TraFixed, false);
                         Debug.LogFormat("所以把克隆体挂到类型{0}所对应的unity父节点: _TraFixed", baseUIForm.CurrentUIType.UIForms_Type);
                         break;
-                    case UIFormType.PopUP:
+                    case UIFormType.PopUp:
                         goCloneUIPrefabs.transform.SetParent(_TraPopUp, false);
                         Debug.LogFormat("所以把克隆体挂到类型{0}所对应的unity父节点: _TraPopUp", baseUIForm.CurrentUIType.UIForms_Type);
                         break;
@@ -422,7 +495,7 @@ namespace UIFrame
         /// </summary>
         private void PopUIForms()
         {
-            if(_StaCurrentUIForms.Count >=2)
+            if(_StaCurrentUIForms.Count >1)
             {
                 Debug.Log(" 栈元素数量 >1, 则出栈处理");
                 BaseUIForm topUIForm = _StaCurrentUIForms.Pop();
@@ -502,7 +575,7 @@ namespace UIFrame
         private void LoadUIFormsPathConfigData()
         {
             Debug.LogFormat("Json配置管理器开始加载窗体预设路径配置文件: \\Resources\\UIFormsConfigInfo.json");
-            IConfigManager configMgr = new ConfigManagerByJson(SysDefine.SYS_PATH_UIFORMSCONFIGINFO);
+            IConfigManager configMgr = new ConfigManagerByJson(SysDefine.SYS_PATH_UIFORMS);
             if (configMgr != null)
             {
                 _DicFormsPaths = configMgr.AppSetting;
