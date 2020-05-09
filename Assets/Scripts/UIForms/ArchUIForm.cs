@@ -5,8 +5,8 @@ using UnityEngine;
 using DG.Tweening;
 using Managers;
 using Models;
-using UIFORM;
-using UIFORM.UIDATACLASS;
+using UIFrame;
+using UIFrame.UIDATACLASS;
 using System;
 using System.IO;
 
@@ -26,9 +26,9 @@ public class ArchUIForm : BaseUIForm
     {
         MsgTypeName = NAME;
         // 窗体属性
-        CurrentUIType.UIForms_Type = UIFormType.PopUp;
+        CurrentUIType.UIForms_Type = UIFormType.PopUP;
         CurrentUIType.UIForms_ShowMode = UIFormShowMode.ReverseChange;
-        CurrentUIType.UIForms_LucencyType = UIFormLucenyType.ImPenetrable;
+        CurrentUIType.UIForms_LucencyType =UIFormLucencyType.ImPenetrable;
 
         ShowSaves();
     }
