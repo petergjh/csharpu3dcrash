@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7320A944-05AD-867C-6BBD-0ECE445F4808}</ProjectGuid>
+    <ProjectGuid>{CF5B213A-70EC-620A-4D2A-D4AE7A3D9338}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -65,12 +65,11 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Archive\ArchiveManager.cs" />
     <Compile Include="Assets\Scripts\ProjectConst.cs" />
-    <Compile Include="Assets\Scripts\ShareMethods\Boiler.cs" />
-    <Compile Include="Assets\Scripts\ShareMethods\Dog.cs" />
     <Compile Include="Assets\Scripts\ShareMethods\GetNetStandardTime.cs" />
     <Compile Include="Assets\Scripts\ShareMethods\NetStatusPublisher.cs" />
     <Compile Include="Assets\Scripts\ShareMethods\TimerScriber.cs" />
     <Compile Include="Assets\Scripts\StartProject.cs" />
+    <Compile Include="Assets\Scripts\UIForms\ArchUIForm.cs" />
     <Compile Include="Assets\Scripts\UIForms\HeroDetailUIForm.cs" />
     <Compile Include="Assets\Scripts\UIForms\HeroInfoUIForm.cs" />
     <Compile Include="Assets\Scripts\UIForms\LogonUIForm.cs" />
@@ -95,37 +94,37 @@
     <Compile Include="Assets\Scripts\UIFramework\UIManager.cs" />
     <Compile Include="Assets\Scripts\UIFramework\UIType.cs" />
     <Reference Include="Unity.DocZh.Editor">
-      <HintPath>E:/csharp_demo/stardiscovery/Library/ScriptAssemblies/Unity.DocZh.Editor.dll</HintPath>
+      <HintPath>E:/csharpu3dcrash/Library/ScriptAssemblies/Unity.DocZh.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.UIWidgets.Editor">
-      <HintPath>E:/csharp_demo/stardiscovery/Library/ScriptAssemblies/Unity.UIWidgets.Editor.dll</HintPath>
+      <HintPath>E:/csharpu3dcrash/Library/ScriptAssemblies/Unity.UIWidgets.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/csharp_demo/stardiscovery/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/csharpu3dcrash/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.UIWidgets">
-      <HintPath>E:/csharp_demo/stardiscovery/Library/ScriptAssemblies/Unity.UIWidgets.dll</HintPath>
+      <HintPath>E:/csharpu3dcrash/Library/ScriptAssemblies/Unity.UIWidgets.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/csharp_demo/stardiscovery/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/csharpu3dcrash/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/csharp_demo/stardiscovery/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>E:/csharpu3dcrash/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Messenger.Editor">
-      <HintPath>E:/csharp_demo/stardiscovery/Library/ScriptAssemblies/Unity.Messenger.Editor.dll</HintPath>
+      <HintPath>E:/csharpu3dcrash/Library/ScriptAssemblies/Unity.Messenger.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.023">
-      <HintPath>E:/csharp_demo/stardiscovery/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.023.dll</HintPath>
+      <HintPath>E:/csharpu3dcrash/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.023.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/csharp_demo/stardiscovery/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/csharpu3dcrash/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>E:/csharp_demo/stardiscovery/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>E:/csharpu3dcrash/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.024">
-      <HintPath>E:/csharp_demo/stardiscovery/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.024.dll</HintPath>
+      <HintPath>E:/csharpu3dcrash/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.024.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.19/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -329,13 +328,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.19/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>E:/csharp_demo/stardiscovery/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>E:/csharpu3dcrash/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>E:/csharp_demo/stardiscovery/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>E:/csharpu3dcrash/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>E:/csharp_demo/stardiscovery/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>E:/csharpu3dcrash/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.19/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
