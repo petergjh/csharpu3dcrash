@@ -1,0 +1,341 @@
+﻿{
+    "ConfigInfo": [
+        { "Key": "Explain" },
+
+        {
+            "Key": "LoginUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\LoginAndRegister\\LoginUI"
+        },
+
+        {
+            "Key": "RegisterStyleUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\LoginAndRegister\\RegisterStyleUI"
+        },
+
+        {
+            "Key": "RegisterUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\LoginAndRegister\\RegisterUI"
+        },
+
+        {
+            "Key": "MainCityUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\MainCity\\MainCityUI"
+        },
+
+        {
+            "Key": "ResourceBarUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Other\\ResourceBarUI"
+        },
+
+        {
+            "Key": "TrainingGroundUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\MainCity\\TrainingGroundUI"
+        },
+
+        {
+            "Key": "TrainingGround_SkillInfoBoxUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\MainCity\\TrainingGround_SkillInfoBoxUI"
+        },
+
+        {
+            "Key": "HeroCallBoardUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\MainCity\\HeroCallBoardUI"
+        },
+
+        {
+            "Key": "ArenaUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\MainCity\\ArenaUI"
+        },
+
+        {
+            "Key": "TavernUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\MainCity\\TavernUI"
+        },
+
+        {
+            "Key": "WarehouseUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\MainCity\\WarehouseUI"
+        },
+
+        {
+            "Key": "GameAdventureUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\MainCity\\GameAdventureUI"
+        },
+
+        {
+            "Key": "GameAreaInfoUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\MainCity\\GameAreaInfoUI"
+        },
+
+        {
+            "Key": "EnterTeamEditUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\MainCity\\TeamEdit\\EnterTeamEditUI"
+        },
+
+        {
+            "Key": "SettingUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\MainCity\\SettingUI"
+        },
+
+        {
+            "Key": "AltarUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\MainCity\\AltarUI"
+        },
+
+        {
+            "Key": "ArenaChoseUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\MainCity\\ArenaChoseUI"
+        },
+
+        {
+            "Key": "TimeGiftsUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\MainCity\\TimeGiftsUI"
+        },
+
+        {
+            "Key": "RolePropertyUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\RoleProperty\\RolePropertyUI"
+        },
+
+        {
+            "Key": "ConsumablesSkillsUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\RoleProperty\\ConsumablesSkillsUI"
+        },
+
+        {
+            "Key": "SkillSettingUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\RoleProperty\\SkillSettingUI"
+        },
+
+        {
+            "Key": "SkillBookUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\RoleProperty\\SkillBookUI"
+        },
+
+        {
+            "Key": "AccessoryChangeUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\RoleProperty\\AccessoryChangeUI"
+        },
+
+        {
+            "Key": "RolePropertyInfoUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\RoleProperty\\RolePropertyInfoUI"
+        },
+
+        {
+            "Key": "RandomMapUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\GameMap\\RandomMapUI"
+        },
+
+        {
+            "Key": "MapTeamEditUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\GameMap\\MapTeamEditUI"
+        },
+
+        {
+            "Key": "DiceUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\GameMap\\Dice\\DiceUI"
+        },
+
+        {
+            "Key": "DiceRoll",
+            "Value": "Prefabs\\MZC\\UIPrefab\\GameMap\\Dice\\DiceRoll"
+        },
+
+        {
+            "Key": "GameMapUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\GameMap\\GameMapUI"
+        },
+
+        {
+            "Key": "GetItemBoxUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\GameMap\\GetItemBag\\GetItemBoxUI"
+        },
+
+        {
+            "Key": "GetTempItemMoveUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\GameMap\\GetItemBag\\GetTempItemMoveUI"
+        },
+
+        {
+            "Key": "RandomShopUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\GameMap\\Shop\\RandomShopUI"
+        },
+
+        {
+            "Key": "ShopGoodsInfoUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\GameMap\\Shop\\ShopGoodsInfoUI"
+        },
+
+        {
+            "Key": "EventBuffUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\GameMap\\EventBuffUI"
+        },
+
+        {
+            "Key": "ErnieUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\GameMap\\ErnieUI"
+        },
+
+        {
+            "Key": "AutoSellEventTipsUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\AutoSellEventTipsUI"
+        },
+
+        {
+            "Key": "GetWalletEventTipsUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\GetWalletEventTipsUI"
+        },
+
+        {
+            "Key": "MagicCircleEventTipsUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\MagicCircleEventTipsUI"
+        },
+
+        {
+            "Key": "TraitsInfoTipsUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\TraitsInfoTipsUI"
+        },
+
+        {
+            "Key": "ItemInfoTipsUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\ItemInfoTipsUI"
+        },
+
+        {
+            "Key": "SelectTipsUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\SelectTipsUI"
+        },
+
+        {
+            "Key": "ValueEventTipsUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\ValueEventTipsUI"
+        },
+
+        {
+            "Key": "ChoseBodyTipsUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\ChoseBodyTipsUI"
+        },
+
+        {
+            "Key": "MiniMagicBookUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\MiniMagicBookUI"
+        },
+
+        {
+            "Key": "RandomEventTipsUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\RandomEventTipsUI"
+        },
+
+        {
+            "Key": "MissionInfoUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\MissionInfoUI"
+        },
+
+        {
+            "Key": "LvUpMagicBookUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\LvUpMagicBookUI"
+        },
+
+        {
+            "Key": "MissionCompetedUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\MissionCompetedUI"
+        },
+
+        {
+            "Key": "FinalRewardUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\FinalRewardUI"
+        },
+
+        {
+            "Key": "MissionTipsUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\MissionTipsUI"
+        },
+
+        {
+            "Key": "WarningTips",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\WarningTips"
+        },
+
+        {
+            "Key": "GetTraitAnmiTipsUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\GetTraitAnmiTipsUI"
+        },
+
+        {
+            "Key": "TempItemBagUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\TempItemBagUI"
+        },
+
+        {
+            "Key": "RandomEventUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\RandomEventUI"
+        },
+
+        {
+            "Key": "ChangeConsumableUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\ChangeConsumableUI"
+        },
+        {
+            "Key": "ShowItemInfoUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\ShowItemInfoUI"
+        },
+        {
+            "Key": "ChangeAccessoryUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\Tips\\ChangeAccessoryUI"
+        },
+
+        {
+            "Key": "TestPluginUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\TestPlugin\\TestPluginUI"
+        },
+
+        {
+            "Key": "GameAnimaionUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\GameAnimation\\GameAnimaionUI"
+        },
+
+        {
+            "Key": "KlotskiGameUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\MiniGame\\KlotskiGameUI"
+        },
+
+        {
+            "Key": "DrawLineGameUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\MiniGame\\DrawLineGameUI"
+        },
+
+        {
+            "Key": "ArrayGameUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\MiniGame\\ArrayGameUI"
+        },
+
+        {
+            "Key": "TurnplateGameUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\MiniGame\\TurnplateGameUI"
+        },
+
+        {
+            "Key": "MiniGameTipsUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\MiniGame\\MiniGameTipsUI"
+        },
+
+        {
+            "Key": "MiniGameChoseRoleUI",
+            "Value": "Prefabs\\MZC\\UIPrefab\\MiniGame\\MiniGameChoseRoleUI"
+        },
+
+        {
+            "Key": "ArchUIForm",
+            "Value": "Prefabs\\Peter\\ArchUIForm"
+        },
+
+        {
+            "Key": "DialogUIForm",
+            "Value": "Prefabs\\Peter\\DialogUIForm"
+        }
+
+
+
+    ]
+}

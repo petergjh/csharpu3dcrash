@@ -1,0 +1,43 @@
+﻿{
+    "ConfigInfo": [
+        {
+            "Key": "Explain",
+            "Value": "Key is a key value in order to find data.Value is a file path."
+        },
+
+        {
+            "Key": "Abstract_MiniGame_CN",
+            "Value": "Abstract\\Abstract_MiniGame_CN"
+        },
+
+        {
+            "Key": "Abstract_MiniGame_EN",
+            "Value": "Abstract\\Abstract_MiniGame_EN"
+        },
+
+        {
+            "Key": "Abstract_CharacterInfo_CN",
+            "Value": "Abstract\\Abstract_CharacterInfo_CN"
+        },
+
+        {
+            "Key": "Abstract_CharacterInfo_EN",
+            "Value": "Abstract\\Abstract_CharacterInfo_EN"
+        },
+
+        {
+            "Key": "Abstract_UI_CN",
+            "Value": "Abstract\\Abstract_UI_CN"
+        },
+
+        {
+            "Key": "Abstract_UI_EN",
+            "Value": "Abstract\\Abstract_UI_EN"
+        },
+
+        {
+            "Key": "ButtonText_Null",
+            "Value": "Null"
+        }
+    ]
+}

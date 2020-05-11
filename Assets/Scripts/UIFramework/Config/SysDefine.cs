@@ -429,6 +429,7 @@ namespace UIFrame
         /// UI窗体的配置信息
         /// </summary>
         public const string SYS_PATH_UIFORMS = @"Config\Json\UIFormsConfigInfo";
+        //public const string SYS_PATH_UIFORMS = @"\\Resources\\UIFormsConfigInfo.json";
         /// <summary>
         /// 日记配置Json路径
         /// </summary>
@@ -442,7 +443,7 @@ namespace UIFrame
         /// <summary>
         /// 根UICanvas
         /// </summary>
-        public const string SYS_PATH_CANVAS = @"Prefabs\MZC\UIPrefab\RootCanvas\RootCanvas";
+        public const string SYS_PATH_CANVAS = @"Canvas";
         /// <summary>
         /// 角色属性窗体UI预设
         /// </summary>
@@ -469,7 +470,7 @@ namespace UIFrame
         /// <summary>
         /// UICanvas标签
         /// </summary>
-        public const string SYS_TAG_CANVAS = "_Tag_UICanvas";
+        public const string SYS_TAG_CANVAS = "_TagCanvas";
         #endregion
 
         #region 节点常量
